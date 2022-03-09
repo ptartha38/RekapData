@@ -1,0 +1,5 @@
+CRITICAL - 2021-07-30 03:40:16 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}

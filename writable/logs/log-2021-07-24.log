@@ -1,0 +1,447 @@
+CRITICAL - 2021-07-24 02:21:34 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 02:29:39 --> Unclosed '{' on line 8
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 02:30:31 --> Undefined variable $validation
+#0 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 104)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 02:34:52 --> syntax error, unexpected token "echo", expecting "function" or "const"
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Home/biodata')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Home/biodata')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 02:34:56 --> syntax error, unexpected token "echo", expecting "function" or "const"
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 02:34:59 --> syntax error, unexpected token "echo", expecting "function" or "const"
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 02:35:03 --> syntax error, unexpected token "echo", expecting "function" or "const"
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 03:00:58 --> Undefined variable $msg
+#0 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 118)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 03:06:41 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-24 03:49:54 --> Undefined variable $check_laki
+#0 C:\xampp\htdocs\klinikpratama\app\Views\home\biodata.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/biodata.ph...', Array, true)
+#4 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_content.php(3): view('home/biodata.ph...')
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(27): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-07-24 04:28:29 --> Undefined variable $sembunyikan_pekerjaan
+#0 C:\xampp\htdocs\klinikpratama\app\Views\home\biodata.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/biodata.ph...', Array, true)
+#4 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_content.php(3): view('home/biodata.ph...')
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(27): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-07-24 06:59:08 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(706): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::session()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(97): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(119): CodeIgniter\HTTP\RedirectResponse->withInput()
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 06:59:08 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\klinikpratama\app\Config\Events.php:35) in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 07:00:20 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(706): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::session()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(97): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(119): CodeIgniter\HTTP\RedirectResponse->withInput()
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 07:00:20 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\klinikpratama\app\Config\Events.php:35) in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 07:01:20 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(706): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::session()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(97): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(119): CodeIgniter\HTTP\RedirectResponse->withInput()
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 07:01:20 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\klinikpratama\app\Config\Events.php:35) in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 07:08:41 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(706): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::session()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(97): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(121): CodeIgniter\HTTP\RedirectResponse->withInput()
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 07:08:41 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\klinikpratama\app\Config\Events.php:35) in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 07:08:59 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(706): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::session()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(97): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(121): CodeIgniter\HTTP\RedirectResponse->withInput()
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 07:08:59 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\klinikpratama\app\Config\Events.php:35) in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 07:10:54 --> array_key_exists(): Argument #2 ($array) must be of type array, CodeIgniter\HTTP\Files\UploadedFile given
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\Files\FileCollection.php(141): array_key_exists('png', Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\Files\FileCollection.php(97): CodeIgniter\HTTP\Files\FileCollection->hasFile('foto.png.jpg.jp...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\IncomingRequest.php(572): CodeIgniter\HTTP\Files\FileCollection->getFileMultiple('foto.png.jpg.jp...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\FileRules.php(249): CodeIgniter\HTTP\IncomingRequest->getFileMultiple('foto.png.jpg.jp...')
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\Validation.php(306): CodeIgniter\Validation\FileRules->ext_in(NULL, Array, Array, NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('foto', 'foto', NULL, Array, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(52): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 07:11:11 --> array_key_exists(): Argument #2 ($array) must be of type array, CodeIgniter\HTTP\Files\UploadedFile given
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\Files\FileCollection.php(141): array_key_exists('png', Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\Files\FileCollection.php(97): CodeIgniter\HTTP\Files\FileCollection->hasFile('foto.png.jpg.jp...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\IncomingRequest.php(572): CodeIgniter\HTTP\Files\FileCollection->getFileMultiple('foto.png.jpg.jp...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\FileRules.php(249): CodeIgniter\HTTP\IncomingRequest->getFileMultiple('foto.png.jpg.jp...')
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\Validation.php(306): CodeIgniter\Validation\FileRules->ext_in(NULL, Array, Array, NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('foto', 'foto', NULL, Array, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(52): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 07:11:45 --> array_key_exists(): Argument #2 ($array) must be of type array, CodeIgniter\HTTP\Files\UploadedFile given
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\Files\FileCollection.php(141): array_key_exists('png', Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\Files\FileCollection.php(97): CodeIgniter\HTTP\Files\FileCollection->hasFile('foto.png.jpg')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\IncomingRequest.php(572): CodeIgniter\HTTP\Files\FileCollection->getFileMultiple('foto.png.jpg')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\FileRules.php(249): CodeIgniter\HTTP\IncomingRequest->getFileMultiple('foto.png.jpg')
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\Validation.php(306): CodeIgniter\Validation\FileRules->ext_in(NULL, Array, Array, NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('foto', 'foto', NULL, Array, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(52): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 10:46:15 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Sess...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Session\Handlers\FileHandler.php(80): ini_set('session.save_pa...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(706): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\Services.php(699): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::session()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(97): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(120): CodeIgniter\HTTP\RedirectResponse->withInput()
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-07-24 10:46:15 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\klinikpratama\app\Config\Events.php:35) in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-24 10:57:27 --> Class "App\Controllers\Services" not found
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-07-24 10:58:24 --> mysqli_sql_exception: Unknown column 'jk' in 'field list' in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('UPDATE `registe...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `registe...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `registe...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2472): CodeIgniter\Database\BaseConnection->query('UPDATE `registe...', Array, false)
+#4 C:\xampp\htdocs\klinikpratama\app\Models\registeruserModel.php(31): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(137): App\Models\registeruserModel->update_biodata_user(NULL, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-24 10:58:24 --> Unknown column 'jk' in 'field list'
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('UPDATE `registe...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `registe...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `registe...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2472): CodeIgniter\Database\BaseConnection->query('UPDATE `registe...', Array, false)
+#4 C:\xampp\htdocs\klinikpratama\app\Models\registeruserModel.php(31): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(137): App\Models\registeruserModel->update_biodata_user(NULL, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-24 10:58:43 --> mysqli_sql_exception: Unknown column 'jk' in 'field list' in C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('UPDATE `registe...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `registe...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `registe...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2472): CodeIgniter\Database\BaseConnection->query('UPDATE `registe...', Array, false)
+#4 C:\xampp\htdocs\klinikpratama\app\Models\registeruserModel.php(31): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(137): App\Models\registeruserModel->update_biodata_user(NULL, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-24 10:58:43 --> Unknown column 'jk' in 'field list'
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('UPDATE `registe...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `registe...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `registe...')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2472): CodeIgniter\Database\BaseConnection->query('UPDATE `registe...', Array, false)
+#4 C:\xampp\htdocs\klinikpratama\app\Models\registeruserModel.php(31): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(137): App\Models\registeruserModel->update_biodata_user(NULL, Array)
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-24 11:17:02 --> Undefined variable $request
+#0 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 122)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-24 11:18:00 --> Class "App\Controllers\registerModel" not found
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->biodata()
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-24 11:27:43 --> Undefined array key 1
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Router\Router.php(463): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 463)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Router\Router.php(152): CodeIgniter\Router\Router->checkRoutes('Biodata')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Biodata')
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-24 11:52:05 --> Undefined variable $validation
+#0 C:\xampp\htdocs\klinikpratama\app\Views\home\biodata.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/biodata.ph...', Array, true)
+#4 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_content.php(3): view('home/biodata.ph...')
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(46): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->data_vaksin()
+#14 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-07-24 12:15:12 --> Undefined variable $status
+#0 C:\xampp\htdocs\klinikpratama\app\Views\home\biodata.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/biodata.ph...', Array, true)
+#4 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_content.php(3): view('home/biodata.ph...')
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(28): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-07-24 12:15:21 --> Undefined variable $status
+#0 C:\xampp\htdocs\klinikpratama\app\Views\home\biodata.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/biodata.ph...', Array, true)
+#4 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_content.php(3): view('home/biodata.ph...')
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 C:\xampp\htdocs\klinikpratama\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#9 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\klinikpratama\app\Controllers\Home.php(28): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2021-07-24 22:47:30 --> Undefined variable: check_laki
+#0 C:\xampp\htdocs\klinikpratama\app\Views\login\register_form.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('login/register_...', Array, true)
+#4 C:\xampp\htdocs\klinikpratama\app\Controllers\Login.php(29): view('login/register_...', Array)
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Login->register()
+#6 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-24 23:11:14 --> Invalid file: login/register_form.php
+#0 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/register_...')
+#1 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('login/register_...', Array, true)
+#2 C:\xampp\htdocs\klinikpratama\app\Controllers\Login.php(29): view('login/register_...', Array)
+#3 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Login->register()
+#4 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\klinikpratama\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\klinikpratama\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

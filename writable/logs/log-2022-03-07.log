@@ -1,0 +1,43 @@
+CRITICAL - 2022-03-07 07:05:59 --> syntax error, unexpected '--' (T_DEC)
+#0 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Grafik')
+#1 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Grafik')
+#2 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\togel\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 07:40:05 --> Undefined variable: dua_belas_SGP
+#0 C:\xampp\htdocs\togel\app\Controllers\Grafik.php(377): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 377, Array)
+#1 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Grafik->index()
+#2 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Grafik))
+#3 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\togel\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 07:47:00 --> Undefined variable: dua_belas_HK
+#0 C:\xampp\htdocs\togel\app\Controllers\Grafik.php(443): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 443, Array)
+#1 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Grafik->index()
+#2 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Grafik))
+#3 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\togel\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 08:32:48 --> Undefined offset: 2
+#0 C:\xampp\htdocs\togel\app\Controllers\Grafik.php(1154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 1154, Array)
+#1 C:\xampp\htdocs\togel\app\Controllers\Grafik.php(1119): App\Controllers\Grafik->tanggal_indo('3')
+#2 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Grafik->index()
+#3 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Grafik))
+#4 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\togel\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-07 08:34:34 --> syntax error, unexpected ';'
+#0 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Grafik')
+#1 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Grafik')
+#2 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\togel\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 08:34:51 --> syntax error, unexpected ']'
+#0 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Grafik')
+#1 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Grafik')
+#2 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\togel\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\togel\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
