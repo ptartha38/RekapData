@@ -1,3 +1,18 @@
+<?php
+if ($waktu >= 18 && $waktu <= 23) {
+    $sd_select = "";
+    $sgp_select = "";
+    $hk_select = 'selected="selected"';
+} else if ($waktu >= 15 && $waktu <= 19) {
+    $sd_select = "";
+    $sgp_select = 'selected="selected"';
+    $hk_select = "";
+} else {
+    $sd_select = 'selected="selected"';
+    $sgp_select = "";
+    $hk_select = "";
+}
+?>
 <div class="card">
     <div class="card-header">
         <strong class="card-title mb-3">Input Data data Hari Ini</strong>
@@ -10,9 +25,9 @@
                     <label for="petugas">PASARAN</label>
                     <select class="custom-select" id="pasaran" name="pasaran">
                         <optgroup label="PILIHAN">
-                            <option value="SD">SYDNEY</option>
-                            <option value="SGP">SINGAPORE</option>
-                            <option value="HK">HONGKONG</option>
+                            <option <?= $sd_select; ?> value="SD">SYDNEY</option>
+                            <option <?= $sgp_select; ?> value="SGP">SINGAPORE</option>
+                            <option <?= $hk_select; ?> value="HK">HONGKONG</option>
                         </optgroup>
                         <optgroup label="TERPILIH SEBELUMNYA" <?= ($validation->hasError('data_angka')) ? '' : 'hidden' ?>>
                             <option <?= ($validation->hasError('data_angka')) ? 'selected' : 'hidden' ?> value="<?= old('pasaran') ?>"><?= old('pasaran') ?></option>

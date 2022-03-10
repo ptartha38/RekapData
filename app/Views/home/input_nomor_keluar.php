@@ -1,22 +1,17 @@
 <?php
-switch (true) {
-    case (is_numeric($waktu) >= 1 && is_numeric($waktu) <= 14);
-        $sd_select = "";
-        $sgp_select = "";
-        $hk_select = 'selected="selected"';
-        break;
-    case (is_numeric($waktu) >= 15 && is_numeric($waktu) <= 18);
-        $sd_select = 'selected="selected"';
-        $sgp_select = "";
-        $hk_select = "";
-        break;
-    case (is_numeric($waktu) >= 19 && is_numeric($waktu) <= 23);
-        $sd_select = "";
-        $sgp_select = 'selected="selected"';
-        $hk_select = "";
-        break;
+if ($waktu >= 1 && $waktu <= 14) {
+    $sd_select = "";
+    $sgp_select = "";
+    $hk_select = 'selected="selected"';
+} else if ($waktu >= 19 && $waktu <= 23) {
+    $sd_select = "";
+    $sgp_select = 'selected="selected"';
+    $hk_select = "";
+} else {
+    $sd_select = 'selected="selected"';
+    $sgp_select = "";
+    $hk_select = "";
 }
-echo $waktu;
 ?>
 <div class="card">
     <div class="card-header">
