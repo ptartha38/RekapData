@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
-                                            <a href="<?= base_url('Home/personil') ?>">
+                                            <a href="<?= base_url('Personil') ?>">
                                                 <i class="zmdi zmdi-settings"></i>Pengaturan</a>
                                         </div>
                                     </div>

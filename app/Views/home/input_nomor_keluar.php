@@ -1,21 +1,22 @@
 <?php
 switch (true) {
-    case (is_numeric($waktu) >= 1):
+    case (is_numeric($waktu) >= 1 && is_numeric($waktu) <= 14);
         $sd_select = "";
         $sgp_select = "";
         $hk_select = 'selected="selected"';
         break;
-    case ($waktu >= 15):
+    case (is_numeric($waktu) >= 15 && is_numeric($waktu) <= 18);
         $sd_select = 'selected="selected"';
         $sgp_select = "";
         $hk_select = "";
         break;
-    case ($waktu >= 19):
+    case (is_numeric($waktu) >= 19 && is_numeric($waktu) <= 23);
         $sd_select = "";
         $sgp_select = 'selected="selected"';
         $hk_select = "";
         break;
 }
+echo $waktu;
 ?>
 <div class="card">
     <div class="card-header">

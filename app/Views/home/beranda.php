@@ -14,6 +14,9 @@
                             <option value="SGP">SINGAPORE</option>
                             <option value="HK">HONGKONG</option>
                         </optgroup>
+                        <optgroup label="TERPILIH SEBELUMNYA" <?= ($validation->hasError('data_angka')) ? '' : 'hidden' ?>>
+                            <option <?= ($validation->hasError('data_angka')) ? 'selected' : 'hidden' ?> value="<?= old('pasaran') ?>"><?= old('pasaran') ?></option>
+                        </optgroup>
                     </select>
                 </div>
                 <input type="text" id="tgl_pembelian" name="tgl_pembelian" placeholder="Tanggal" class="form-control" value="<?php echo $hari_ini; ?>" disabled>
