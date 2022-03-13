@@ -110,8 +110,8 @@ class Keuangan extends BaseController
     public function input_nomor_keluar()
     {
         $session = session();
-        $myTime = Time::now('Asia/Makassar', 'en_US')->toLocalizedString('yyyy-MM-dd');
-        $waktu = Time::now('Asia/Makassar', 'en_US')->getHour();
+        $myTime = Time::now('Asia/Hong_Kong', 'en_US')->toLocalizedString('yyyy-MM-dd');
+        $waktu = Time::now('Asia/Hong_Kong', 'en_US')->getHour();
 
         $judul = 'Input Nomor Keluar';
         $isi = 'home/input_nomor_keluar.php';

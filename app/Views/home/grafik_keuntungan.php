@@ -41,7 +41,6 @@
         </div>
     </div>
 </div>
-</div>
 
 <script>
     $(function() {
@@ -79,22 +78,36 @@
                     ]
                 },
                 options: {
+                    tooltips: {
+                        callbacks: {
+                            label: function(t, d) {
+                                var xLabel = d.datasets[t.datasetIndex].label;
+                                var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
+                                return xLabel + ': ' + yLabel;
+                            }
+                        }
+                    },
                     legend: {
                         position: 'top',
                         labels: {
                             fontFamily: 'Poppins'
                         }
-
                     },
                     scales: {
                         xAxes: [{
                             ticks: {
                                 fontFamily: "Poppins"
-
                             }
                         }],
                         yAxes: [{
                             ticks: {
+                                callback: function(value, index, values) {
+                                    if (parseInt(value) >= 1000 || parseInt(value) < 0) {
+                                        return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    } else {
+                                        return 'Rp ' + value;
+                                    }
+                                },
                                 beginAtZero: true,
                                 fontFamily: "Poppins"
                             }
@@ -136,22 +149,36 @@
                     ]
                 },
                 options: {
+                    tooltips: {
+                        callbacks: {
+                            label: function(t, d) {
+                                var xLabel = d.datasets[t.datasetIndex].label;
+                                var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
+                                return xLabel + ': ' + yLabel;
+                            }
+                        }
+                    },
                     legend: {
                         position: 'top',
                         labels: {
                             fontFamily: 'Poppins'
                         }
-
                     },
                     scales: {
                         xAxes: [{
                             ticks: {
                                 fontFamily: "Poppins"
-
                             }
                         }],
                         yAxes: [{
                             ticks: {
+                                callback: function(value, index, values) {
+                                    if (parseInt(value) >= 1000 || parseInt(value) < 0) {
+                                        return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    } else {
+                                        return 'Rp ' + value;
+                                    }
+                                },
                                 beginAtZero: true,
                                 fontFamily: "Poppins"
                             }
@@ -193,22 +220,36 @@
                     ]
                 },
                 options: {
+                    tooltips: {
+                        callbacks: {
+                            label: function(t, d) {
+                                var xLabel = d.datasets[t.datasetIndex].label;
+                                var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
+                                return xLabel + ': ' + yLabel;
+                            }
+                        }
+                    },
                     legend: {
                         position: 'top',
                         labels: {
                             fontFamily: 'Poppins'
                         }
-
                     },
                     scales: {
                         xAxes: [{
                             ticks: {
                                 fontFamily: "Poppins"
-
                             }
                         }],
                         yAxes: [{
                             ticks: {
+                                callback: function(value, index, values) {
+                                    if (parseInt(value) >= 1000 || parseInt(value) < 0) {
+                                        return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    } else {
+                                        return 'Rp ' + value;
+                                    }
+                                },
                                 beginAtZero: true,
                                 fontFamily: "Poppins"
                             }
@@ -223,17 +264,19 @@
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ["Tanggal 22", "Tanggal 23", "Tanggal 24", "Tanggal 25", "Tanggal 26", "Tanggal 27", "Tanggal 28", "Tanggal 29", "Tanggal 30", "Tanggal 31"],
+                    labels: ["Tanggal 22", "Tanggal 23", "Tanggal 24", "Tanggal 25", "Tanggal 26", "Tanggal 27", "Tanggal 28"
+                        <?= ($tanggal_dua_puluh_sembilan_SD != null) ? (",Tanggal 29") : (null) ?> <?= ($tanggal_tiga_puluh_SD != null) ? (",Tanggal 30") : (null) ?> <?= ($tanggal_tiga_puluh_satu_SD != null) ? (",Tanggal 31") : (null) ?>
+                    ],
                     datasets: [{
                             label: "Sydney",
-                            data: [<?= $tanggal_dua_puluh_dua_SD ?>, <?= $tanggal_dua_puluh_tiga_SD ?>, <?= $tanggal_dua_puluh_empat_SD ?>, <?= $tanggal_dua_puluh_lima_SD ?>, <?= $tanggal_dua_puluh_enam_SD ?>, <?= $tanggal_dua_puluh_tujuh_SD ?>, <?= $tanggal_dua_puluh_delapan_SD ?>, <?= $tanggal_dua_puluh_sembilan_SD ?>, <?= $tanggal_tiga_puluh_SD ?>, <?= $tanggal_tiga_puluh_satu_SD ?>],
+                            data: [<?= $tanggal_dua_puluh_dua_SD ?>, <?= $tanggal_dua_puluh_tiga_SD ?>, <?= $tanggal_dua_puluh_empat_SD ?>, <?= $tanggal_dua_puluh_lima_SD ?>, <?= $tanggal_dua_puluh_enam_SD ?>, <?= $tanggal_dua_puluh_tujuh_SD ?>, <?= $tanggal_dua_puluh_delapan_SD ?>, <?= ($tanggal_dua_puluh_sembilan_SD != null) ? ($tanggal_dua_puluh_sembilan_SD) : (""); ?>, <?= ($tanggal_tiga_puluh_SD != null) ? ($tanggal_tiga_puluh_SD) : (""); ?>, <?= ($tanggal_tiga_puluh_satu_SD != null) ? ($tanggal_tiga_puluh_satu_SD) : (""); ?>],
                             borderColor: "rgba( 156, 94, 0 , 0.9)",
                             borderWidth: "0",
                             backgroundColor: "rgba( 156, 94, 0 , 0.5)"
                         },
                         {
                             label: "Singapore",
-                            data: [<?= $tanggal_dua_puluh_dua_SGP ?>, <?= $tanggal_dua_puluh_tiga_SGP ?>, <?= $tanggal_dua_puluh_empat_SGP ?>, <?= $tanggal_dua_puluh_lima_SGP ?>, <?= $tanggal_dua_puluh_enam_SGP ?>, <?= $tanggal_dua_puluh_tujuh_SGP ?>, <?= $tanggal_dua_puluh_delapan_SGP ?>, <?= $tanggal_dua_puluh_sembilan_SGP ?>, <?= $tanggal_tiga_puluh_SGP ?>, <?= $tanggal_tiga_puluh_satu_SGP ?>],
+                            data: [<?= $tanggal_dua_puluh_dua_SGP ?>, <?= $tanggal_dua_puluh_tiga_SGP ?>, <?= $tanggal_dua_puluh_empat_SGP ?>, <?= $tanggal_dua_puluh_lima_SGP ?>, <?= $tanggal_dua_puluh_enam_SGP ?>, <?= $tanggal_dua_puluh_tujuh_SGP ?>, <?= $tanggal_dua_puluh_delapan_SGP ?>, <?= ($tanggal_dua_puluh_sembilan_SGP != null) ? ($tanggal_dua_puluh_sembilan_SGP) : (""); ?>, <?= ($tanggal_tiga_puluh_SGP != null) ? ($tanggal_tiga_puluh_SGP) : (""); ?>, <?= ($tanggal_tiga_puluh_satu_SGP != null) ? ($tanggal_tiga_puluh_satu_SGP) : (""); ?>],
                             borderColor: "rgba(0, 123, 255,0.09)",
                             borderWidth: "0",
                             backgroundColor: "rgba(0, 123, 255, 0.5)",
@@ -241,7 +284,7 @@
                         },
                         {
                             label: "Hongkong",
-                            data: [<?= $tanggal_dua_puluh_dua_HK ?>, <?= $tanggal_dua_puluh_tiga_HK ?>, <?= $tanggal_dua_puluh_empat_HK ?>, <?= $tanggal_dua_puluh_lima_HK ?>, <?= $tanggal_dua_puluh_enam_HK ?>, <?= $tanggal_dua_puluh_tujuh_HK ?>, <?= $tanggal_dua_puluh_delapan_HK ?>, <?= $tanggal_dua_puluh_sembilan_HK ?>, <?= $tanggal_tiga_puluh_HK ?>, <?= $tanggal_tiga_puluh_satu_HK ?>],
+                            data: [<?= $tanggal_dua_puluh_dua_HK ?>, <?= $tanggal_dua_puluh_tiga_HK ?>, <?= $tanggal_dua_puluh_empat_HK ?>, <?= $tanggal_dua_puluh_lima_HK ?>, <?= $tanggal_dua_puluh_enam_HK ?>, <?= $tanggal_dua_puluh_tujuh_HK ?>, <?= ($tanggal_dua_puluh_delapan_HK != null) ? ($tanggal_dua_puluh_delapan_HK) : (""); ?>, <?= ($tanggal_dua_puluh_sembilan_HK != null) ? ($tanggal_dua_puluh_sembilan_HK) : (""); ?>, <?= ($tanggal_tiga_puluh_HK != null) ? ($tanggal_tiga_puluh_HK) : (""); ?>, <?= ($tanggal_tiga_puluh_satu_HK != null) ? ($tanggal_tiga_puluh_satu_HK) : (""); ?>],
                             borderColor: "rgba( 5, 3, 1 ,0.9)",
                             borderWidth: "0",
                             backgroundColor: "rgba( 5, 3, 1 ,0.5)",
@@ -250,22 +293,36 @@
                     ]
                 },
                 options: {
+                    tooltips: {
+                        callbacks: {
+                            label: function(t, d) {
+                                var xLabel = d.datasets[t.datasetIndex].label;
+                                var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
+                                return xLabel + ': ' + yLabel;
+                            }
+                        }
+                    },
                     legend: {
                         position: 'top',
                         labels: {
                             fontFamily: 'Poppins'
                         }
-
                     },
                     scales: {
                         xAxes: [{
                             ticks: {
                                 fontFamily: "Poppins"
-
                             }
                         }],
                         yAxes: [{
                             ticks: {
+                                callback: function(value, index, values) {
+                                    if (parseInt(value) >= 1000 || parseInt(value) < 0) {
+                                        return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    } else {
+                                        return 'Rp ' + value;
+                                    }
+                                },
                                 beginAtZero: true,
                                 fontFamily: "Poppins"
                             }

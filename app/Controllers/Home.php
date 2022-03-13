@@ -15,7 +15,7 @@ class Home extends BaseController
     {
         $session = session();
         $db = \Config\Database::connect();
-        $myTime = Time::now('Asia/Makassar', 'en_US')->toLocalizedString('yyyy-MM-dd');
+        $myTime = Time::now('Asia/Hong_Kong', 'en_US')->toLocalizedString('yyyy-MM-dd');
         $waktu = Time::now('Asia/Makassar', 'en_US')->getHour();
         $judul = 'Beranda';
         $isi = 'home/beranda.php';
