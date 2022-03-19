@@ -220,7 +220,7 @@ class Keuangan extends BaseController
                 'kotor' => $this->rupiah($hasil_kotor),
                 'bersih' => $this->rupiah($hasil_bersih),
                 'hadiah' => $hadiah,
-                'total' => $this->rupiah($total),
+                'total' => $total,
             ];
             $insert = $keuanganModel->insertNomordata($data);
             if ($insert) {

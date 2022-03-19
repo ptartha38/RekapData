@@ -1,3 +1,11 @@
+<?php
+function rupiah($angka)
+{
+
+    $hasil_rupiah = "Rp " . number_format($angka, 0, '.', '.');
+    return $hasil_rupiah;
+}
+?>
 <div class="card">
     <div class="card-header">
         <strong class="card-title mb-3">Data Pendapatan Bersih, Kotor, Hadiah & Total</strong>
@@ -34,7 +42,7 @@
                         <td>Hadiah : <?= $hadiah_sydney; ?></td>
                     </tr>
                     <tr>
-                        <td>Total (Bersih - Hadiah) === <?= $total_sydney; ?></td>
+                        <td>Total (Bersih - Hadiah) === <?= rupiah((int)$total_sydney) ?></td>
                     </tr>
                 </tbody>
             </table>
@@ -57,7 +65,7 @@
                         <td>Hadiah : <?= $hadiah_singapore; ?></td>
                     </tr>
                     <tr>
-                        <td>Total (Bersih - Hadiah) === <?= $total_singapore; ?></td>
+                        <td>Total (Bersih - Hadiah) === <?= rupiah((int)$total_singapore); ?></td>
                     </tr>
                 </tbody>
             </table>
@@ -80,7 +88,7 @@
                         <td>Hadiah : <?= $hadiah_hongkong; ?></td>
                     </tr>
                     <tr>
-                        <td>Total (Bersih - Hadiah) === <?= $total_hongkong; ?></td>
+                        <td>Total (Bersih - Hadiah) === <?= rupiah((int)$total_hongkong); ?></td>
                     </tr>
                 </tbody>
             </table>

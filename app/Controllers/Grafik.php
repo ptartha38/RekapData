@@ -19,7 +19,335 @@ class Grafik extends BaseController
         $waktu_sekarang = new Time('now');
         $bulan_sekarang = $waktu_sekarang->getMonth();
         $tahun_sekarang = $waktu_sekarang->getYear();
-
+        /*------------------------------------------------------------------------------ PERHITUNGAN BERDASARKAN BULAN ----------------------------------------------------------------------------------------------- */
+        // SYDNEY
+        $januari_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 1, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 1, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $februari_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 2, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 2, 29)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $maret_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 3, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 3, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $april_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 4, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 4, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $mei_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 5, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 5, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $juni_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 6, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 6, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $juli_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 7, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 7, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $agustus_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 8, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 8, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $september_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 9, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 9, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $oktober_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 10, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 10, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $november_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 11, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 11, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        $desember_SD = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 12, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 12, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->selectSum("total")->get()->getResult();
+        // Januari
+        if ($januari_SD != null) {
+            foreach ($januari_SD as $row) {
+                $bulan_januari_SD = $row->total;
+            }
+        } else {
+            $bulan_januari_SD = 0;
+        }
+        // Februari
+        if ($februari_SD != null) {
+            foreach ($februari_SD as $row) {
+                $bulan_februari_SD = $row->total;
+            }
+        } else {
+            $bulan_februari_SD = 0;
+        }
+        // Maret
+        if ($maret_SD != null) {
+            foreach ($maret_SD as $row) {
+                $bulan_maret_SD = $row->total;
+            }
+        } else {
+            $bulan_maret_SD = 0;
+        }
+        // April
+        if ($april_SD != null) {
+            foreach ($april_SD as $row) {
+                $bulan_april_SD = $row->total;
+            }
+        } else {
+            $bulan_april_SD = 0;
+        }
+        // Mei
+        if ($mei_SD != null) {
+            foreach ($mei_SD as $row) {
+                $bulan_mei_SD = $row->total;
+            }
+        } else {
+            $bulan_mei_SD = 0;
+        }
+        // Juni
+        if ($juni_SD != null) {
+            foreach ($juni_SD as $row) {
+                $bulan_juni_SD = $row->total;
+            }
+        } else {
+            $bulan_juni_SD = 0;
+        }
+        // Juli
+        if ($juli_SD != null) {
+            foreach ($juli_SD as $row) {
+                $bulan_juli_SD = $row->total;
+            }
+        } else {
+            $bulan_juli_SD = 0;
+        }
+        // Agustus
+        if ($agustus_SD != null) {
+            foreach ($agustus_SD as $row) {
+                $bulan_agustus_SD = $row->total;
+            }
+        } else {
+            $bulan_agustus_SD = 0;
+        }
+        // September
+        if ($september_SD != null) {
+            foreach ($september_SD as $row) {
+                $bulan_september_SD = $row->total;
+            }
+        } else {
+            $bulan_september_SD = 0;
+        }
+        // Oktober
+        if ($oktober_SD != null) {
+            foreach ($oktober_SD as $row) {
+                $bulan_oktober_SD = $row->total;
+            }
+        } else {
+            $bulan_oktober_SD = 0;
+        }
+        // November
+        if ($november_SD != null) {
+            foreach ($november_SD as $row) {
+                $bulan_november_SD = $row->total;
+            }
+        } else {
+            $bulan_november_SD = 0;
+        }
+        // Desember
+        if ($desember_SD != null) {
+            foreach ($desember_SD as $row) {
+                $bulan_desember_SD = $row->total;
+            }
+        } else {
+            $bulan_desember_SD = 0;
+        }
+        // SINGAPORE
+        $januari_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 1, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 1, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $februari_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 2, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 2, 29)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $maret_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 3, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 3, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $april_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 4, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 4, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $mei_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 5, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 5, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $juni_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 6, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 6, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $juli_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 7, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 7, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $agustus_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 8, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 8, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $september_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 9, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 9, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $oktober_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 10, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 10, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $november_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 11, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 11, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        $desember_SGP = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 12, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 12, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SGP')->selectSum("total")->get()->getResult();
+        // Januari
+        if ($januari_SGP != null) {
+            foreach ($januari_SGP as $row) {
+                $bulan_januari_SGP = $row->total;
+            }
+        } else {
+            $bulan_januari_SGP = 0;
+        }
+        // Februari
+        if ($februari_SGP != null) {
+            foreach ($februari_SGP as $row) {
+                $bulan_februari_SGP = $row->total;
+            }
+        } else {
+            $bulan_februari_SGP = 0;
+        }
+        // Maret
+        if ($maret_SGP != null) {
+            foreach ($maret_SGP as $row) {
+                $bulan_maret_SGP = $row->total;
+            }
+        } else {
+            $bulan_maret_SGP = 0;
+        }
+        // April
+        if ($april_SGP != null) {
+            foreach ($april_SGP as $row) {
+                $bulan_april_SGP = $row->total;
+            }
+        } else {
+            $bulan_april_SGP = 0;
+        }
+        // Mei
+        if ($mei_SGP != null) {
+            foreach ($mei_SGP as $row) {
+                $bulan_mei_SGP = $row->total;
+            }
+        } else {
+            $bulan_mei_SGP = 0;
+        }
+        // Juni
+        if ($juni_SGP != null) {
+            foreach ($juni_SGP as $row) {
+                $bulan_juni_SGP = $row->total;
+            }
+        } else {
+            $bulan_juni_SGP = 0;
+        }
+        // Juli
+        if ($juli_SGP != null) {
+            foreach ($juli_SGP as $row) {
+                $bulan_juli_SGP = $row->total;
+            }
+        } else {
+            $bulan_juli_SGP = 0;
+        }
+        // Agustus
+        if ($agustus_SGP != null) {
+            foreach ($agustus_SGP as $row) {
+                $bulan_agustus_SGP = $row->total;
+            }
+        } else {
+            $bulan_agustus_SGP = 0;
+        }
+        // September
+        if ($september_SGP != null) {
+            foreach ($september_SGP as $row) {
+                $bulan_september_SGP = $row->total;
+            }
+        } else {
+            $bulan_september_SGP = 0;
+        }
+        // Oktober
+        if ($oktober_SGP != null) {
+            foreach ($oktober_SGP as $row) {
+                $bulan_oktober_SGP = $row->total;
+            }
+        } else {
+            $bulan_oktober_SGP = 0;
+        }
+        // November
+        if ($november_SGP != null) {
+            foreach ($november_SGP as $row) {
+                $bulan_november_SGP = $row->total;
+            }
+        } else {
+            $bulan_november_SGP = 0;
+        }
+        // Desember
+        if ($desember_SGP != null) {
+            foreach ($desember_SGP as $row) {
+                $bulan_desember_SGP = $row->total;
+            }
+        } else {
+            $bulan_desember_SGP = 0;
+        }
+        // HONGKONG
+        $januari_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 1, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 1, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $februari_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 2, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 2, 29)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $maret_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 3, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 3, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $april_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 4, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 4, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $mei_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 5, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 5, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $juni_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 6, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 6, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $juli_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 7, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 7, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $agustus_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 8, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 8, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $september_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 9, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 9, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $oktober_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 10, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 10, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $november_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 11, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 11, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        $desember_HK = $keuanganModel->where('tanggal >=', Time::createFromDate($tahun_sekarang, 12, 1)->toLocalizedString('yyyy-MM-dd'))->where('tanggal <=', Time::createFromDate($tahun_sekarang, 12, 31)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'HK')->selectSum("total")->get()->getResult();
+        // Januari
+        if ($januari_HK != null) {
+            foreach ($januari_HK as $row) {
+                $bulan_januari_HK = $row->total;
+            }
+        } else {
+            $bulan_januari_HK = 0;
+        }
+        // Februari
+        if ($februari_HK != null) {
+            foreach ($februari_HK as $row) {
+                $bulan_februari_HK = $row->total;
+            }
+        } else {
+            $bulan_februari_HK = 0;
+        }
+        // Maret
+        if ($maret_HK != null) {
+            foreach ($maret_HK as $row) {
+                $bulan_maret_HK = $row->total;
+            }
+        } else {
+            $bulan_maret_HK = 0;
+        }
+        // April
+        if ($april_HK != null) {
+            foreach ($april_HK as $row) {
+                $bulan_april_HK = $row->total;
+            }
+        } else {
+            $bulan_april_HK = 0;
+        }
+        // Mei
+        if ($mei_HK != null) {
+            foreach ($mei_HK as $row) {
+                $bulan_mei_HK = $row->total;
+            }
+        } else {
+            $bulan_mei_HK = 0;
+        }
+        // Juni
+        if ($juni_HK != null) {
+            foreach ($juni_HK as $row) {
+                $bulan_juni_HK = $row->total;
+            }
+        } else {
+            $bulan_juni_HK = 0;
+        }
+        // Juli
+        if ($juli_HK != null) {
+            foreach ($juli_HK as $row) {
+                $bulan_juli_HK = $row->total;
+            }
+        } else {
+            $bulan_juli_HK = 0;
+        }
+        // Agustus
+        if ($agustus_HK != null) {
+            foreach ($agustus_HK as $row) {
+                $bulan_agustus_HK = $row->total;
+            }
+        } else {
+            $bulan_agustus_HK = 0;
+        }
+        // September
+        if ($september_HK != null) {
+            foreach ($september_HK as $row) {
+                $bulan_september_HK = $row->total;
+            }
+        } else {
+            $bulan_september_HK = 0;
+        }
+        // Oktober
+        if ($oktober_HK != null) {
+            foreach ($oktober_HK as $row) {
+                $bulan_oktober_HK = $row->total;
+            }
+        } else {
+            $bulan_oktober_HK = 0;
+        }
+        // November
+        if ($november_HK != null) {
+            foreach ($november_HK as $row) {
+                $bulan_november_HK = $row->total;
+            }
+        } else {
+            $bulan_november_HK = 0;
+        }
+        // Desember
+        if ($desember_HK != null) {
+            foreach ($desember_HK as $row) {
+                $bulan_desember_HK = $row->total;
+            }
+        } else {
+            $bulan_desember_HK = 0;
+        }
+        /*------------------------------------------------------------------------------ PERHITUNGAN BERDASARKAN MINGGU ----------------------------------------------------------------------------------------------- */
         /* Minggu Pertama ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
         // SYDNEY
         $satu_SD = $keuanganModel->where('tanggal', Time::createFromDate($tahun_sekarang, $bulan_sekarang, 1)->toLocalizedString('yyyy-MM-dd'))->where('pasaran =', 'SD')->get()->getResult();
@@ -1116,7 +1444,49 @@ class Grafik extends BaseController
             'tanggal_tiga_puluh_HK' => $tanggal_tiga_puluh_HK,
             'tanggal_tiga_puluh_satu_HK' => $tanggal_tiga_puluh_satu_HK,
 
+            // Bulanan
+            // Sydney
+            'januari_SD' => $bulan_januari_SD,
+            'februari_SD' => $bulan_februari_SD,
+            'maret_SD' => $bulan_maret_SD,
+            'april_SD' => $bulan_april_SD,
+            'mei_SD' => $bulan_mei_SD,
+            'juni_SD' => $bulan_juni_SD,
+            'juli_SD' => $bulan_juli_SD,
+            'agustus_SD' => $bulan_agustus_SD,
+            'september_SD' => $bulan_september_SD,
+            'oktober_SD' => $bulan_oktober_SD,
+            'november_SD' => $bulan_november_SD,
+            'desember_SD' => $bulan_desember_SD,
+            // Singapore
+            'januari_SGP' => $bulan_januari_SGP,
+            'februari_SGP' => $bulan_februari_SGP,
+            'maret_SGP' => $bulan_maret_SGP,
+            'april_SGP' => $bulan_april_SGP,
+            'mei_SGP' => $bulan_mei_SGP,
+            'juni_SGP' => $bulan_juni_SGP,
+            'juli_SGP' => $bulan_juli_SGP,
+            'agustus_SGP' => $bulan_agustus_SGP,
+            'september_SGP' => $bulan_september_SGP,
+            'oktober_SGP' => $bulan_oktober_SGP,
+            'november_SGP' => $bulan_november_SGP,
+            'desember_SGP' => $bulan_desember_SGP,
+            // Hongkong
+            'januari_HK' => $bulan_januari_HK,
+            'februari_HK' => $bulan_februari_HK,
+            'maret_HK' => $bulan_maret_HK,
+            'april_HK' => $bulan_april_HK,
+            'mei_HK' => $bulan_mei_HK,
+            'juni_HK' => $bulan_juni_HK,
+            'juli_HK' => $bulan_juli_HK,
+            'agustus_HK' => $bulan_agustus_HK,
+            'september_HK' => $bulan_september_HK,
+            'oktober_HK' => $bulan_oktober_HK,
+            'november_HK' => $bulan_november_HK,
+            'desember_HK' => $bulan_desember_HK,
+
             'bulan_sekarang' => $this->tanggal_indo($bulan_sekarang),
+            'tahun_sekarang' => $tahun_sekarang,
             'session' => $session,
             'validation' => \Config\Services::validation(),
         ];
@@ -1125,44 +1495,6 @@ class Grafik extends BaseController
 
 
     /* FUNGSI PENDUKUNG LAINNYA */
-    public function terbilang($nilai)
-    {
-        if ($nilai < 0) {
-            $hasil = "minus " . trim($this->penyebut($nilai));
-        } else {
-            $hasil = trim($this->penyebut($nilai));
-        }
-        return $hasil;
-    }
-
-    public function penyebut($nilai)
-    {
-        $nilai = abs($nilai);
-        $huruf = array("", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas");
-        $temp = "";
-        if ($nilai < 12) {
-            $temp = " " . $huruf[$nilai];
-        } else if ($nilai < 20) {
-            $temp = $this->penyebut($nilai - 10) . " belas";
-        } else if ($nilai < 100) {
-            $temp = $this->penyebut($nilai / 10) . " puluh" . $this->penyebut($nilai % 10);
-        } else if ($nilai < 200) {
-            $temp = " seratus" . $this->penyebut($nilai - 100);
-        } else if ($nilai < 1000) {
-            $temp = $this->penyebut($nilai / 100) . " ratus" . $this->penyebut($nilai % 100);
-        } else if ($nilai < 2000) {
-            $temp = " seribu" . $this->penyebut($nilai - 1000);
-        } else if ($nilai < 1000000) {
-            $temp = $this->penyebut($nilai / 1000) . " ribu" . $this->penyebut($nilai % 1000);
-        } else if ($nilai < 1000000000) {
-            $temp = $this->penyebut($nilai / 1000000) . " juta" . $this->penyebut($nilai % 1000000);
-        } else if ($nilai < 1000000000000) {
-            $temp = $this->penyebut($nilai / 1000000000) . " milyar" . $this->penyebut(fmod($nilai, 1000000000));
-        } else if ($nilai < 1000000000000000) {
-            $temp = $this->penyebut($nilai / 1000000000000) . " trilyun" . $this->penyebut(fmod($nilai, 1000000000000));
-        }
-        return $temp;
-    }
 
     public function tanggal_indo($masukan)
     {

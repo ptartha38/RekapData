@@ -42,6 +42,22 @@
     </div>
 </div>
 
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title mb-3">Grafik Keuntungan Bulanan</strong>
+    </div>
+    <div class="card-header">
+        <div class="container-fluid">
+            <div class="au-card m-b-30">
+                <div class="au-card-inner">
+                    <h3 class="title-2 m-b-40">Keuntungan Bulanan Tahun <?= $tahun_sekarang; ?></h3>
+                    <canvas id="BarChartBulanan"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     $(function() {
         // single bar chart
@@ -285,6 +301,78 @@
                         {
                             label: "Hongkong",
                             data: [<?= $tanggal_dua_puluh_dua_HK ?>, <?= $tanggal_dua_puluh_tiga_HK ?>, <?= $tanggal_dua_puluh_empat_HK ?>, <?= $tanggal_dua_puluh_lima_HK ?>, <?= $tanggal_dua_puluh_enam_HK ?>, <?= $tanggal_dua_puluh_tujuh_HK ?>, <?= ($tanggal_dua_puluh_delapan_HK != null) ? ($tanggal_dua_puluh_delapan_HK) : (""); ?>, <?= ($tanggal_dua_puluh_sembilan_HK != null) ? ($tanggal_dua_puluh_sembilan_HK) : (""); ?>, <?= ($tanggal_tiga_puluh_HK != null) ? ($tanggal_tiga_puluh_HK) : (""); ?>, <?= ($tanggal_tiga_puluh_satu_HK != null) ? ($tanggal_tiga_puluh_satu_HK) : (""); ?>],
+                            borderColor: "rgba( 5, 3, 1 ,0.9)",
+                            borderWidth: "0",
+                            backgroundColor: "rgba( 5, 3, 1 ,0.5)",
+                            fontFamily: "Poppins"
+                        }
+                    ]
+                },
+                options: {
+                    tooltips: {
+                        callbacks: {
+                            label: function(t, d) {
+                                var xLabel = d.datasets[t.datasetIndex].label;
+                                var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
+                                return xLabel + ': ' + yLabel;
+                            }
+                        }
+                    },
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            fontFamily: 'Poppins'
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontFamily: "Poppins"
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                callback: function(value, index, values) {
+                                    if (parseInt(value) >= 1000 || parseInt(value) < 0) {
+                                        return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    } else {
+                                        return 'Rp ' + value;
+                                    }
+                                },
+                                beginAtZero: true,
+                                fontFamily: "Poppins"
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+
+        var ctx = document.getElementById("BarChartBulanan");
+        if (ctx) {
+            ctx.height = 150;
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"],
+                    datasets: [{
+                            label: "Sydney",
+                            data: [<?= $januari_SD; ?>, <?= $februari_SD; ?>, <?= $maret_SD; ?>, <?= $april_SD; ?>, <?= $mei_SD; ?>, <?= $juni_SD; ?>, <?= $juli_SD; ?>, <?= $agustus_SD; ?>, <?= $september_SD; ?>, <?= $oktober_SD; ?>, <?= $november_SD; ?>, <?= $desember_SD; ?>],
+                            borderColor: "rgba( 156, 94, 0 , 0.9)",
+                            borderWidth: "0",
+                            backgroundColor: "rgba( 156, 94, 0 , 0.5)"
+                        },
+                        {
+                            label: "Singapore",
+                            data: [<?= $januari_SGP; ?>, <?= $februari_SGP; ?>, <?= $maret_SGP; ?>, <?= $april_SGP; ?>, <?= $mei_SGP; ?>, <?= $juni_SGP; ?>, <?= $juli_SGP; ?>, <?= $agustus_SGP; ?>, <?= $september_SGP; ?>, <?= $oktober_SGP; ?>, <?= $november_SGP; ?>, <?= $desember_SGP; ?>],
+                            borderColor: "rgba(0, 123, 255,0.09)",
+                            borderWidth: "0",
+                            backgroundColor: "rgba(0, 123, 255, 0.5)",
+                            fontFamily: "Poppins"
+                        },
+                        {
+                            label: "Hongkong",
+                            data: [<?= $januari_HK; ?>, <?= $februari_HK; ?>, <?= $maret_HK; ?>, <?= $april_HK; ?>, <?= $mei_HK; ?>, <?= $juni_HK; ?>, <?= $juli_HK; ?>, <?= $agustus_HK; ?>, <?= $september_HK; ?>, <?= $oktober_HK; ?>, <?= $november_HK; ?>, <?= $desember_HK; ?>],
                             borderColor: "rgba( 5, 3, 1 ,0.9)",
                             borderWidth: "0",
                             backgroundColor: "rgba( 5, 3, 1 ,0.5)",
