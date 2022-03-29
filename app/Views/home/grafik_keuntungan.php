@@ -281,7 +281,7 @@
                 type: 'bar',
                 data: {
                     labels: ["Tanggal 22", "Tanggal 23", "Tanggal 24", "Tanggal 25", "Tanggal 26", "Tanggal 27", "Tanggal 28"
-                        <?= ($tanggal_dua_puluh_sembilan_SD != null) ? (",Tanggal 29") : (null) ?> <?= ($tanggal_tiga_puluh_SD != null) ? (",Tanggal 30") : (null) ?> <?= ($tanggal_tiga_puluh_satu_SD != null) ? (",Tanggal 31") : (null) ?>
+                        <?= ($tanggal_dua_puluh_sembilan_SD != null) ? ("," . '"Tanggal 29"') : (null) ?> <?= ($tanggal_tiga_puluh_SD != null) ? ("," . '"Tanggal 30"') : (null) ?> <?= ($tanggal_tiga_puluh_satu_SD != null) ? ("," . '"Tanggal 31"') : (null) ?>
                     ],
                     datasets: [{
                             label: "Sydney",

@@ -197,7 +197,7 @@ class Keuangan extends BaseController
                 foreach ($cari_4D as $row4D) {
                     $nomor_data_4D = $row4D['nomor_data'];
                     $harga_beli_4D = $row4D['harga_beli'];
-                    $hadiah_4D = $harga_beli_4D * 350;
+                    $hadiah_4D = $harga_beli_4D * 3500;
                     $nomor_4D_dan_hadiah = $nomor_data_4D . " = " . $this->rupiah($hadiah_4D) . "(4D)" .  " ";
                 }
             } else {

@@ -15,6 +15,7 @@ class Rekapan extends BaseController
     public function index()
     {
         $session = session();
+        $waktu = Time::now('Asia/Makassar', 'en_US')->getHour();
         $tanggal_filter = $this->request->getVar('date_filter');
         $pasaran_filter = $this->request->getVar('filter_pasaran');
         $db = \Config\Database::connect();
@@ -46,6 +47,7 @@ class Rekapan extends BaseController
         $data = [
             'judul' => $judul,
             'isi'   => $isi,
+            'waktu' => $waktu,
             'hari_ini' => $myTime,
             'rekap_nomor' => $rekap_nomor,
             'jumlah_pembelian' => $jumlah_pembelian,

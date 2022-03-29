@@ -33,16 +33,16 @@ function rupiah($angka)
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Kotor (Sebelum Potong Agen 27%) === <?= $kotor_sydney; ?></td>
+                        <td>Bruto === <?= $kotor_sydney; ?></td>
                     </tr>
                     <tr>
-                        <td>Bersih (Setelah Potong Agen 27%) === <?= $bersih_sydney; ?></td>
+                        <td>Netto === <?= $bersih_sydney; ?></td>
                     </tr>
                     <tr>
                         <td>Hadiah : <?= $hadiah_sydney; ?></td>
                     </tr>
                     <tr>
-                        <td>Total (Bersih - Hadiah) === <?= rupiah((int)$total_sydney) ?></td>
+                        <td>Total === <?= rupiah((int)$total_sydney) ?></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,16 +56,16 @@ function rupiah($angka)
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Kotor (Sebelum Potong Agen 27%) === <?= $kotor_singapore; ?></td>
+                        <td>Bruto === <?= $kotor_singapore; ?></td>
                     </tr>
                     <tr>
-                        <td>Bersih (Setelah Potong Agen 27%) === <?= $bersih_singapore; ?></td>
+                        <td>Netto === <?= $bersih_singapore; ?></td>
                     </tr>
                     <tr>
                         <td>Hadiah : <?= $hadiah_singapore; ?></td>
                     </tr>
                     <tr>
-                        <td>Total (Bersih - Hadiah) === <?= rupiah((int)$total_singapore); ?></td>
+                        <td>Total === <?= rupiah((int)$total_singapore); ?></td>
                     </tr>
                 </tbody>
             </table>
@@ -79,16 +79,16 @@ function rupiah($angka)
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Kotor (Sebelum Potong Agen 27%) === <?= $kotor_hongkong; ?></td>
+                        <td>Bruto === <?= $kotor_hongkong; ?></td>
                     </tr>
                     <tr>
-                        <td>Bersih (Setelah Potong Agen 27%) === <?= $bersih_hongkong; ?></td>
+                        <td>Netto === <?= $bersih_hongkong; ?></td>
                     </tr>
                     <tr>
                         <td>Hadiah : <?= $hadiah_hongkong; ?></td>
                     </tr>
                     <tr>
-                        <td>Total (Bersih - Hadiah) === <?= rupiah((int)$total_hongkong); ?></td>
+                        <td>Total === <?= rupiah((int)$total_hongkong); ?></td>
                     </tr>
                 </tbody>
             </table>
