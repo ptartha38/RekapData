@@ -49,7 +49,7 @@ if ($waktu >= 1 && $waktu <= 14) {
                     <label for="text-input" class=" form-control-label">4D</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="text" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('3D')) ? old('4D') : '' ?>" id="4D" name="4D" minlength="4" maxlength="4" placeholder="4D" class="form-control <?= ($validation->hasError('4D')) ? 'is-invalid' : '' ?>">
+                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('3D')) ? old('4D') : '' ?>" id="4D" name="4D" minlength="4" maxlength="4" placeholder="4D" class="form-control <?= ($validation->hasError('4D')) ? 'is-invalid' : '' ?>">
                     <small id="error_4D" style="font-style : normal; color:red;" name="error_4D"><?= $validation->getError('4D'); ?></small>
                 </div>
             </div>
@@ -58,7 +58,7 @@ if ($waktu >= 1 && $waktu <= 14) {
                     <label for="text-input" class=" form-control-label">3D</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="text" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('4D')) ? old('3D') : '' ?>" id="3D" name="3D" minlength="3" maxlength="3" placeholder="3D" class="form-control <?= ($validation->hasError('3D')) ? 'is-invalid' : '' ?>">
+                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('4D')) ? old('3D') : '' ?>" id="3D" name="3D" minlength="3" maxlength="3" placeholder="3D" class="form-control <?= ($validation->hasError('3D')) ? 'is-invalid' : '' ?>">
                     <small id="error_3D" style="font-style : normal; color:red;" name="error_3D"><?= $validation->getError('3D'); ?></small>
                 </div>
             </div>
@@ -67,7 +67,7 @@ if ($waktu >= 1 && $waktu <= 14) {
                     <label for="text-input" class=" form-control-label">2D</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="text" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('4D') or $validation->hasError('3D')) ? old('2D') : '' ?>" id="2D" name="2D" minlength="2" maxlength="2" placeholder="2D" class="form-control <?= ($validation->hasError('2D')) ? 'is-invalid' : '' ?>">
+                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('4D') or $validation->hasError('3D')) ? old('2D') : '' ?>" id="2D" name="2D" minlength="2" maxlength="2" placeholder="2D" class="form-control <?= ($validation->hasError('2D')) ? 'is-invalid' : '' ?>">
                     <small id="error_2D" style="font-style : normal; color:red;" name="error_2D"><?= $validation->getError('2D'); ?></small>
                 </div>
             </div>

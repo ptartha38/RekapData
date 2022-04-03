@@ -4,6 +4,71 @@ namespace App\validation;
 
 class CekNomor
 {
+    /* Filter Jumlah Pembelian Kurang dari 500 Rupiah */
+
+    public function CekPembelian($data_nomor)
+    {
+        // Cek Pembelian Ada +
+        if (strpos($data_nomor, '+')) {
+            $nomor = $this->cek_pembelian_dulu($data_nomor);
+            if ($nomor === false) {
+                $nominal_pembelian = true;
+            } else {
+                $nominal_pembelian = false;
+            }
+        } else {
+            $harga_pembelian = substr($data_nomor, strrpos($data_nomor, '#') + 1);
+            if ($harga_pembelian >= 500) {
+                $nominal_pembelian = true;
+            } else {
+                $nominal_pembelian = false;
+            }
+        }
+        // Hasil
+        if ($nominal_pembelian === true) {
+            return true;
+        }
+        return false;
+    }
+
+    function cek_pembelian_dulu($data_nomor)
+    {
+        $pecah = explode('+', $data_nomor);
+        $per_pembelian = array_map(array($this, 'per_pembelian'), $pecah);
+        $satukan = implode('+', $per_pembelian);
+        $pembelian = explode('+', $satukan);
+        $harga_beli = array_map(array($this, 'hanya_harga'), $pembelian);
+        $filter = array_map(array($this, 'filter_pembelian'), $harga_beli);
+        $satukan = implode('+', $filter);
+        $cek_salah = strpos($satukan, 'salah');
+        return $cek_salah;
+    }
+
+    public function per_pembelian($nomor)
+    {
+        $pembelian = substr($nomor, strrpos($nomor, '#')) . "+";
+        $hasil = str_replace('*', $pembelian, $nomor);
+        return $hasil;
+    }
+
+    public function hanya_harga($nomor)
+    {
+        $hasil = substr($nomor, strrpos($nomor, '#') + 1);
+        return $hasil;
+    }
+
+    public function filter_pembelian($nomor)
+    {
+        if ($nomor >= 500) {
+            $harga = $nomor;
+        } else {
+            $harga = "salah";
+        }
+        return $harga;
+    }
+
+    /* Pengecekan Angka 2D - 4D sebelum masuk Database (Filter + Pada Pembelian dan Nominal Pembelian) */
+
     public function CekDigit($data_nomor)
     {
         // Cek Digit

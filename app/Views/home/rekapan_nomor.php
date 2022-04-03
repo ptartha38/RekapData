@@ -8,7 +8,7 @@ if ($waktu >= 22 && $waktu <= 11) {
     $sd_select = "";
     $sgp_select = "";
     $hk_select = 'selected="selected"';
-} else if ($waktu >= 17 && $waktu <= 21) {
+} else if ($waktu >= 19 && $waktu <= 21) {
     $sd_select = "";
     $sgp_select = 'selected="selected"';
     $hk_select = "";

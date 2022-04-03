@@ -44,14 +44,30 @@
 
 <div class="card">
     <div class="card-header">
-        <strong class="card-title mb-3">Grafik Keuntungan Bulanan</strong>
+        <strong class="card-title mb-3">Grafik Keuntungan Bulanan Per Pasaran</strong>
     </div>
     <div class="card-header">
         <div class="container-fluid">
             <div class="au-card m-b-30">
                 <div class="au-card-inner">
-                    <h3 class="title-2 m-b-40">Keuntungan Bulanan Tahun <?= $tahun_sekarang; ?></h3>
+                    <h3 class="title-2 m-b-40">Keuntungan Bulanan Per Pasaran Tahun <?= $tahun_sekarang; ?></h3>
                     <canvas id="BarChartBulanan"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title mb-3">Grafik Total Keuntungan Bulanan </strong>
+    </div>
+    <div class="card-header">
+        <div class="container-fluid">
+            <div class="au-card m-b-30">
+                <div class="au-card-inner">
+                    <h3 class="title-2 m-b-40">Total Keuntungan Bulanan Tahun <?= $tahun_sekarang; ?></h3>
+                    <canvas id="BarChartTotalBulanan"></canvas>
                 </div>
             </div>
         </div>
@@ -379,6 +395,61 @@
                             fontFamily: "Poppins"
                         }
                     ]
+                },
+                options: {
+                    tooltips: {
+                        callbacks: {
+                            label: function(t, d) {
+                                var xLabel = d.datasets[t.datasetIndex].label;
+                                var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
+                                return xLabel + ': ' + yLabel;
+                            }
+                        }
+                    },
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            fontFamily: 'Poppins'
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontFamily: "Poppins"
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                callback: function(value, index, values) {
+                                    if (parseInt(value) >= 1000 || parseInt(value) < 0) {
+                                        return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    } else {
+                                        return 'Rp ' + value;
+                                    }
+                                },
+                                beginAtZero: true,
+                                fontFamily: "Poppins"
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+
+        var ctx = document.getElementById("BarChartTotalBulanan");
+        if (ctx) {
+            ctx.height = 150;
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"],
+                    datasets: [{
+                        label: "Profit",
+                        data: [<?= $total_januari; ?>, <?= $total_februari; ?>, <?= $total_maret; ?>, <?= $total_april; ?>, <?= $total_mei; ?>, <?= $total_juni; ?>, <?= $total_juli; ?>, <?= $total_agustus; ?>, <?= $total_september; ?>, <?= $total_oktober; ?>, <?= $total_november; ?>, <?= $total_desember; ?>],
+                        borderColor: "rgba( 156, 94, 0 , 0.9)",
+                        borderWidth: "0",
+                        backgroundColor: "rgba( 33, 149, 40 , 0.5)"
+                    }, ]
                 },
                 options: {
                     tooltips: {

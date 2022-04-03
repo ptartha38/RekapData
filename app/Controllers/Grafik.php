@@ -347,6 +347,20 @@ class Grafik extends BaseController
         } else {
             $bulan_desember_HK = 0;
         }
+        /*------------------------------------------------------------------------------ PERHITUNGAN TOTAL BULANAN ----------------------------------------------------------------------------------------------- */
+        $total_januari = $bulan_januari_SD + $bulan_januari_SGP + $bulan_januari_HK;
+        $total_februari = $bulan_februari_SD + $bulan_februari_SGP + $bulan_februari_HK;
+        $total_maret = $bulan_maret_SD + $bulan_maret_SGP + $bulan_maret_HK;
+        $total_april = $bulan_april_SD + $bulan_april_SGP + $bulan_april_HK;
+        $total_mei = $bulan_mei_SD + $bulan_mei_SGP + $bulan_mei_HK;
+        $total_juni = $bulan_juni_SD + $bulan_juni_SGP + $bulan_juni_HK;
+        $total_juli = $bulan_juli_SD + $bulan_juli_SGP + $bulan_juli_HK;
+        $total_agustus = $bulan_agustus_SD + $bulan_agustus_SGP + $bulan_agustus_HK;
+        $total_september = $bulan_september_SD + $bulan_september_SGP + $bulan_september_HK;
+        $total_oktober = $bulan_oktober_SD + $bulan_oktober_SGP + $bulan_oktober_HK;
+        $total_november = $bulan_november_SD + $bulan_november_SGP + $bulan_november_HK;
+        $total_desember = $bulan_desember_SD + $bulan_desember_SGP + $bulan_desember_HK;
+
         /*------------------------------------------------------------------------------ PERHITUNGAN BERDASARKAN MINGGU ----------------------------------------------------------------------------------------------- */
         /* Minggu Pertama ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
         // SYDNEY
@@ -1484,6 +1498,20 @@ class Grafik extends BaseController
             'oktober_HK' => $bulan_oktober_HK,
             'november_HK' => $bulan_november_HK,
             'desember_HK' => $bulan_desember_HK,
+
+            // Total Bulanan SD + SGP + HK
+            'total_januari' => $total_januari,
+            'total_februari' => $total_februari,
+            'total_maret' => $total_maret,
+            'total_april' => $total_april,
+            'total_mei' => $total_mei,
+            'total_juni' => $total_juni,
+            'total_juli' => $total_juli,
+            'total_agustus' => $total_agustus,
+            'total_september' => $total_september,
+            'total_oktober' => $total_oktober,
+            'total_november' => $total_november,
+            'total_desember' => $total_desember,
 
             'bulan_sekarang' => $this->tanggal_indo($bulan_sekarang),
             'tahun_sekarang' => $tahun_sekarang,

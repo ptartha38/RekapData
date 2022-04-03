@@ -66,15 +66,14 @@ class Rekapan extends BaseController
         helper('form');
         if (!$this->validate([
             'data_angka' => [
-                'rules' => 'required|CekDigit[data_angka]',
+                'rules' => 'required|CekDigit[data_angka]|CekPembelian[data_angka]',
                 'errors' => [
                     'required' => 'Data Tidak Boleh Kosong',
                     'CekDigit' => 'Terdapat Kesalahan Format',
+                    'CekPembelian' => 'Terdapat Pembelian di Bawah 500 Rupiah',
                 ]
             ],
         ])) {
-            // $validation = \Config\Services::validation();
-            // return redirect()->to(base_url() . '/anggota/form_insert')->withInput()->with('validation', $validation);
             return redirect()->to(base_url() . '/Home')->withInput();
         }
         $request = Services::request();

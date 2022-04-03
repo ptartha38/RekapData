@@ -36,7 +36,7 @@ if ($waktu >= 18 && $waktu <= 23) {
                 </div>
                 <input type="text" id="tgl_pembelian" name="tgl_pembelian" placeholder="Tanggal" class="form-control" value="<?php echo $hari_ini; ?>" disabled>
                 <br>
-                <textarea name="data_angka" id="data_angka" rows="3" placeholder="Data Angka" class="form-control <?= ($validation->hasError('data_angka')) ? 'is-invalid' : '' ?>"><?= old('data_angka') ?></textarea>
+                <textarea rows="10" name="data_angka" id="data_angka" rows="3" placeholder="Data Angka" class="form-control <?= ($validation->hasError('data_angka')) ? 'is-invalid' : '' ?>"><?= old('data_angka') ?></textarea>
                 <div id="validationServer03Feedback" class="invalid-feedback">
                     <p style="font-size: small; font-weight: bold"><?= $validation->getError('data_angka'); ?></p>
                 </div>
