@@ -66,11 +66,12 @@ class Rekapan extends BaseController
         helper('form');
         if (!$this->validate([
             'data_angka' => [
-                'rules' => 'required|CekDigit[data_angka]|CekPembelian[data_angka]',
+                'rules' => 'required|CekDigit[data_angka]|CekPembelian[data_angka]|CekSpasi[data_angka]',
                 'errors' => [
                     'required' => 'Data Tidak Boleh Kosong',
                     'CekDigit' => 'Terdapat Kesalahan Format',
-                    'CekPembelian' => 'Terdapat Pembelian di Bawah 500 Rupiah',
+                    'CekPembelian' => 'Terdapat Pembelian di Bawah 1000 Rupiah',
+                    'CekSpasi' => 'Terdapat Spasi di Antara Pembelian',
                 ]
             ],
         ])) {

@@ -18,7 +18,7 @@ class CekNomor
             }
         } else {
             $harga_pembelian = substr($data_nomor, strrpos($data_nomor, '#') + 1);
-            if ($harga_pembelian >= 500) {
+            if ($harga_pembelian >= 1000) {
                 $nominal_pembelian = true;
             } else {
                 $nominal_pembelian = false;
@@ -26,6 +26,21 @@ class CekNomor
         }
         // Hasil
         if ($nominal_pembelian === true) {
+            return true;
+        }
+        return false;
+    }
+
+    public function CekSpasi($data_nomor)
+    {
+        // Cek Spasi
+        if (preg_match('/[ ]+/', $data_nomor, $cek_spasi)) {
+            $hasil_cek_spasi = "ada spasi";
+        } else {
+            $hasil_cek_spasi = "tidak ada spasi";
+        };
+        // Hasil
+        if ($hasil_cek_spasi === "tidak ada spasi") {
             return true;
         }
         return false;

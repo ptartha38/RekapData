@@ -436,6 +436,10 @@
             });
         }
 
+        var chartColors = {
+            profit: 'rgba(255, 99, 132,0.5)',
+            loss: 'rgba( 33, 149, 40 , 0.5)'
+        };
         var ctx = document.getElementById("BarChartTotalBulanan");
         if (ctx) {
             ctx.height = 150;
@@ -448,7 +452,20 @@
                         data: [<?= $total_januari; ?>, <?= $total_februari; ?>, <?= $total_maret; ?>, <?= $total_april; ?>, <?= $total_mei; ?>, <?= $total_juni; ?>, <?= $total_juli; ?>, <?= $total_agustus; ?>, <?= $total_september; ?>, <?= $total_oktober; ?>, <?= $total_november; ?>, <?= $total_desember; ?>],
                         borderColor: "rgba( 156, 94, 0 , 0.9)",
                         borderWidth: "0",
-                        backgroundColor: "rgba( 33, 149, 40 , 0.5)"
+                        backgroundColor: [
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                            chartColors.profit,
+                        ],
                     }, ]
                 },
                 options: {
@@ -457,15 +474,12 @@
                             label: function(t, d) {
                                 var xLabel = d.datasets[t.datasetIndex].label;
                                 var yLabel = t.yLabel >= 1000 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel || t.yLabel < 0 ? 'Rp ' + t.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : 'Rp' + t.yLabel;
-                                return xLabel + ': ' + yLabel;
-                            }
+                                return yLabel;
+                            },
                         }
                     },
                     legend: {
-                        position: 'top',
-                        labels: {
-                            fontFamily: 'Poppins'
-                        }
+                        display: false //This will do the task
                     },
                     scales: {
                         xAxes: [{
@@ -490,6 +504,14 @@
                 }
             });
         }
+        var colorChangeValue = 0; //set this to whatever is the deciding color change value
+        var dataset = myChart.data.datasets[0];
+        for (var i = 0; i < dataset.data.length; i++) {
+            if (dataset.data[i] > colorChangeValue) {
+                dataset.backgroundColor[i] = chartColors.loss;
+            }
+        }
+        myChart.update();
 
     })
 </script>

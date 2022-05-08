@@ -174,7 +174,7 @@ class Keuangan extends BaseController
                     $nomor_data = $row['nomor_data'];
                     $harga_beli = $row['harga_beli'];
                     $hadiah_2D = $harga_beli * 70;
-                    $nomor_2D_dan_hadiah = $nomor_data . " = " . $this->rupiah($hadiah_2D) . "(2D)" .  " ";
+                    $nomor_2D_dan_hadiah = $this->rupiah($harga_beli) . " x 70" . " = " . $this->rupiah($hadiah_2D) . "(2D)" .  " ";
                 }
             } else {
                 $nomor_2D_dan_hadiah = "";
@@ -185,8 +185,8 @@ class Keuangan extends BaseController
                 foreach ($cari_3D as $row3D) {
                     $nomor_data_3D = $row3D['nomor_data'];
                     $harga_beli_3D = $row3D['harga_beli'];
-                    $hadiah_3D = $harga_beli_3D * 350;
-                    $nomor_3D_dan_hadiah = $nomor_data_3D . " = " . $this->rupiah($hadiah_3D) . "(3D)" .  " ";
+                    $hadiah_3D = $harga_beli_3D * 400;
+                    $nomor_3D_dan_hadiah = $this->rupiah($harga_beli_3D) . " x 400" . " = " . $this->rupiah($hadiah_3D) . "(3D)" .  " ";
                 }
             } else {
                 $nomor_3D_dan_hadiah = "";
@@ -197,8 +197,8 @@ class Keuangan extends BaseController
                 foreach ($cari_4D as $row4D) {
                     $nomor_data_4D = $row4D['nomor_data'];
                     $harga_beli_4D = $row4D['harga_beli'];
-                    $hadiah_4D = $harga_beli_4D * 3500;
-                    $nomor_4D_dan_hadiah = $nomor_data_4D . " = " . $this->rupiah($hadiah_4D) . "(4D)" .  " ";
+                    $hadiah_4D = $harga_beli_4D * 3000;
+                    $nomor_4D_dan_hadiah = $this->rupiah($harga_beli_4D) . " x 3000" . " = " . $this->rupiah($hadiah_4D) . "(4D)" .  " ";
                 }
             } else {
                 $nomor_4D_dan_hadiah = "";

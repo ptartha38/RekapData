@@ -4,11 +4,11 @@
     }
 </style>
 <?php
-if ($waktu >= 22 && $waktu <= 11) {
+if ($waktu >= 21 && $waktu <= 23) {
     $sd_select = "";
     $sgp_select = "";
     $hk_select = 'selected="selected"';
-} else if ($waktu >= 19 && $waktu <= 21) {
+} else if ($waktu >= 15 && $waktu <= 20) {
     $sd_select = "";
     $sgp_select = 'selected="selected"';
     $hk_select = "";

@@ -1,5 +1,5 @@
 <?php
-if ($waktu >= 18 && $waktu <= 23) {
+if ($waktu >= 20 && $waktu <= 23) {
     $sd_select = "";
     $sgp_select = "";
     $hk_select = 'selected="selected"';
@@ -15,7 +15,7 @@ if ($waktu >= 18 && $waktu <= 23) {
 ?>
 <div class="card">
     <div class="card-header">
-        <strong class="card-title mb-3">Input Data data Hari Ini</strong>
+        <strong class="card-title mb-3">Input Data Hari Ini</strong>
     </div>
     <div class="card-body">
         <div class="card-body card-block">
