@@ -137,6 +137,37 @@ class Keuangan extends BaseController
                     'required' => 'Tanggal Tidak Boleh Kosong',
                 ]
             ],
+            '4D' => [
+                'rules' => 'required|min_length[4]|numeric',
+                'errors' => [
+                    'required' => '4D Tidak Boleh Kosong',
+                    'min_length' => 'Keluaran 4D Harus 4 Digit',
+                    'numeric' => 'Masukan Hanya Boleh Angka',
+                ]
+            ],
+            '3D' => [
+                'rules' => 'required|min_length[3]|numeric',
+                'errors' => [
+                    'required' => '3D Tidak Boleh Kosong',
+                    'min_length' => 'Keluaran 3D Harus 3 Digit',
+                    'numeric' => 'Masukan Hanya Boleh Angka',
+                ]
+            ],
+            '2D' => [
+                'rules' => 'required|min_length[2]|numeric',
+                'errors' => [
+                    'required' => '2D Tidak Boleh Kosong',
+                    'min_length' => 'Keluaran 2D Harus 2 Digit',
+                    'numeric' => 'Masukan Hanya Boleh Angka',
+                ]
+            ],
+            'kode_masukan' => [
+                'rules' => 'required|is_unique[laporan_keuangan.kode_keluaran]',
+                'errors' => [
+                    'required' => 'Terdapat Data yang Kosong atau Tidak Benar (Silahkan isi Kembali atau Reload Halaman)',
+                    'is_unique' => 'Nomor Keluar (Jackpot) Sudah di Input Sebelumnya',
+                ]
+            ],
         ])) {
             return redirect()->to(base_url() . '/Keuangan/input_nomor_keluar')->withInput();
         }
@@ -149,6 +180,7 @@ class Keuangan extends BaseController
             $nomor_2D = $this->request->getVar('2D');
             $nomor_3D = $this->request->getVar('3D');
             $nomor_4D = $this->request->getVar('4D');
+            $kode_keluaran = $this->request->getVar('kode_masukan');
 
             /* PENDAPATAN KOTOR */
             $jumlah_pembelian = $dataModel->where('tgl_pembelian =', $tgl_keluaran)->where('id_pembelian =', $pasaran)->select('sum(harga_beli) as hasil')->first();
@@ -165,9 +197,9 @@ class Keuangan extends BaseController
             $db = \Config\Database::connect();
             $data = $db->table('data_angka');
             $rekap_nomor = $data->select('nomor_data')->selectSum("harga_beli")->groupBy("nomor_data")->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran);
-            $cari_2D = $rekap_nomor->where('nomor_data =', $nomor_2D)->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran)->get()->getResultArray();
-            $cari_3D = $rekap_nomor->where('nomor_data =', $nomor_3D)->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran)->get()->getResultArray();
-            $cari_4D = $rekap_nomor->where('nomor_data =', $nomor_4D)->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran)->get()->getResultArray();
+            $cari_2D = $rekap_nomor->where('nomor_data =', $nomor_2D)->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran)->select('nomor_data')->selectSum("harga_beli")->groupBy("nomor_data")->get()->getResultArray();
+            $cari_3D = $rekap_nomor->where('nomor_data =', $nomor_3D)->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran)->select('nomor_data')->selectSum("harga_beli")->groupBy("nomor_data")->get()->getResultArray();
+            $cari_4D = $rekap_nomor->where('nomor_data =', $nomor_4D)->where('id_pembelian =', $pasaran)->where('tgl_pembelian =', $tgl_keluaran)->select('nomor_data')->selectSum("harga_beli")->groupBy("nomor_data")->get()->getResultArray();
 
             if ($cari_2D != null) {
                 foreach ($cari_2D as $row) {
@@ -186,7 +218,7 @@ class Keuangan extends BaseController
                     $nomor_data_3D = $row3D['nomor_data'];
                     $harga_beli_3D = $row3D['harga_beli'];
                     $hadiah_3D = $harga_beli_3D * 400;
-                    $nomor_3D_dan_hadiah = $this->rupiah($harga_beli_3D) . " x 400" . " = " . $this->rupiah($hadiah_3D) . "(3D)" .  " ";
+                    $nomor_3D_dan_hadiah =  $this->rupiah($harga_beli_3D) . " x 400" . " = " . $this->rupiah($hadiah_3D) . "(3D)" .  " ";
                 }
             } else {
                 $nomor_3D_dan_hadiah = "";
@@ -220,6 +252,7 @@ class Keuangan extends BaseController
                 'kotor' => $this->rupiah($hasil_kotor),
                 'bersih' => $this->rupiah($hasil_bersih),
                 'hadiah' => $hadiah,
+                'kode_keluaran' => $kode_keluaran,
                 'total' => $total,
             ];
             $insert = $keuanganModel->insertNomordata($data);

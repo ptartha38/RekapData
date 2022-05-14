@@ -49,7 +49,7 @@ if ($waktu >= 1 && $waktu <= 14) {
                     <label for="text-input" class=" form-control-label">4D</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('3D')) ? old('4D') : '' ?>" id="4D" name="4D" minlength="4" maxlength="4" placeholder="4D" class="form-control <?= ($validation->hasError('4D')) ? 'is-invalid' : '' ?>">
+                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('3D')) ? old('4D') : '' ?>" id="4D" name="4D" maxlength="4" placeholder="4D" class="form-control <?= ($validation->hasError('4D')) ? 'is-invalid' : '' ?>">
                     <small id="error_4D" style="font-style : normal; color:red;" name="error_4D"><?= $validation->getError('4D'); ?></small>
                 </div>
             </div>
@@ -58,7 +58,7 @@ if ($waktu >= 1 && $waktu <= 14) {
                     <label for="text-input" class=" form-control-label">3D</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('4D')) ? old('3D') : '' ?>" id="3D" name="3D" minlength="3" maxlength="3" placeholder="3D" class="form-control <?= ($validation->hasError('3D')) ? 'is-invalid' : '' ?>">
+                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('2D') or $validation->hasError('4D')) ? old('3D') : '' ?>" id="3D" name="3D" maxlength="3" placeholder="3D" class="form-control <?= ($validation->hasError('3D')) ? 'is-invalid' : '' ?>">
                     <small id="error_3D" style="font-style : normal; color:red;" name="error_3D"><?= $validation->getError('3D'); ?></small>
                 </div>
             </div>
@@ -67,10 +67,20 @@ if ($waktu >= 1 && $waktu <= 14) {
                     <label for="text-input" class=" form-control-label">2D</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('4D') or $validation->hasError('3D')) ? old('2D') : '' ?>" id="2D" name="2D" minlength="2" maxlength="2" placeholder="2D" class="form-control <?= ($validation->hasError('2D')) ? 'is-invalid' : '' ?>">
+                    <input type="text" autocomplete="off" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('4D') or $validation->hasError('3D')) ? old('2D') : '' ?>" id="2D" name="2D" maxlength="2" placeholder="2D" class="form-control <?= ($validation->hasError('2D')) ? 'is-invalid' : '' ?>">
                     <small id="error_2D" style="font-style : normal; color:red;" name="error_2D"><?= $validation->getError('2D'); ?></small>
                 </div>
             </div>
+            <div hidden class="row form-group">
+                <div class="col col-md-3">
+                    <label for="text-input" class=" form-control-label">ID</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="text" autocomplete="off" id="kode_masukan" name="kode_masukan" class="form-control" value="<?= ($validation->hasError('jumlah_modal') or $validation->hasError('tgl_keluaran') or $validation->hasError('4D') or $validation->hasError('3D') or $validation->hasError('2D')) ? old('kode_masukan') : '' ?>">
+                </div>
+            </div>
+            <small id="error_kode_keluaran" style="font-style : normal; color:red;" name="error_kode_keluaran"><?= $validation->getError('kode_masukan'); ?></small>
+
     </div>
     <div class="card-footer">
         <button id="btn_simpan" name="btn_simpan" type="submit" class="btn btn-primary btn-sm" onclick="preloader()">
@@ -97,29 +107,15 @@ if ($waktu >= 1 && $waktu <= 14) {
             document.getElementById("form_insert_nomor_keluar").submit();
         };
 
-        function setInputFilter(textbox, inputFilter) {
-            ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
-                textbox.addEventListener(event, function() {
-                    if (inputFilter(this.value)) {
-                        this.oldValue = this.value;
-                        this.oldSelectionStart = this.selectionStart;
-                        this.oldSelectionEnd = this.selectionEnd;
-                    } else if (this.hasOwnProperty("oldValue")) {
-                        this.value = this.oldValue;
-                        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
-                    } else {
-                        this.value = "";
-                    }
-                });
-            });
+        function generate() {
+            var pasaran = document.getElementById("pasaran");
+            var ambil_pasaran = pasaran.options[pasaran.selectedIndex].value;
+            var tgl_keluaran = $('#tgl_keluaran');
+            $('#kode_masukan').val(ambil_pasaran + "+" + tgl_keluaran.val());
         }
-        setInputFilter(document.getElementById("2D"), function(value) {
-            return /^\d+$/.test(value); // Allow digits 
-        });
-        setInputFilter(document.getElementById("3D"), function(value) {
-            return /^\d+$/.test(value); // Allow digits 
-        });
-        setInputFilter(document.getElementById("4D"), function(value) {
-            return /^\d+$/.test(value); // Allow digits 
-        });
+        $('#pasaran').on('change', generate);
+        $('#tgl_keluaran').on('change', generate);
+        $('#2D').on('change', generate);
+        $('#3D').on('change', generate);
+        $('#4D').on('change', generate);
 </script>

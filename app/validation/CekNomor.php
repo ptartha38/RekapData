@@ -4,7 +4,7 @@ namespace App\validation;
 
 class CekNomor
 {
-    /* Filter Jumlah Pembelian Kurang dari 500 Rupiah */
+    /* Filter Jumlah Pembelian Kurang dari 1000 Rupiah */
 
     public function CekPembelian($data_nomor)
     {

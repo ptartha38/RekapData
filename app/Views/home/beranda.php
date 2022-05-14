@@ -1,16 +1,16 @@
 <?php
 if ($waktu >= 20 && $waktu <= 23) {
-    $sd_select = "";
-    $sgp_select = "";
+    $sd_select = "hidden";
+    $sgp_select = "hidden";
     $hk_select = 'selected="selected"';
 } else if ($waktu >= 15 && $waktu <= 19) {
-    $sd_select = "";
+    $sd_select = "hidden";
     $sgp_select = 'selected="selected"';
-    $hk_select = "";
+    $hk_select = "hidden";
 } else {
     $sd_select = 'selected="selected"';
-    $sgp_select = "";
-    $hk_select = "";
+    $sgp_select = "hidden";
+    $hk_select = "hidden";
 }
 ?>
 <div class="card">
@@ -36,7 +36,7 @@ if ($waktu >= 20 && $waktu <= 23) {
                 </div>
                 <input type="text" id="tgl_pembelian" name="tgl_pembelian" placeholder="Tanggal" class="form-control" value="<?php echo $hari_ini; ?>" disabled>
                 <br>
-                <textarea rows="10" name="data_angka" id="data_angka" rows="3" placeholder="Data Angka" class="form-control <?= ($validation->hasError('data_angka')) ? 'is-invalid' : '' ?>"><?= old('data_angka') ?></textarea>
+                <textarea rows="10" name="data_angka" id="data_angka" placeholder="Data Angka" class="form-control <?= ($validation->hasError('data_angka')) ? 'is-invalid' : '' ?>"><?= old('data_angka') ?></textarea>
                 <div id="validationServer03Feedback" class="invalid-feedback">
                     <p style="font-size: small; font-weight: bold"><?= $validation->getError('data_angka'); ?></p>
                 </div>
