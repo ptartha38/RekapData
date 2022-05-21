@@ -243,7 +243,7 @@ class Keuangan extends BaseController
             /* Nilai Hadiah  */
 
             /* Totalan */
-            $total = $hasil_bersih - $total_hadiah;
+            $total = floor($hasil_bersih - $total_hadiah);
             /* Totalan */
 
             $data = [

@@ -17,6 +17,11 @@ class Home extends BaseController
         $db = \Config\Database::connect();
         $myTime = Time::now('Asia/Hong_Kong', 'en_US')->toLocalizedString('yyyy-MM-dd');
         $waktu = Time::now('Asia/Makassar', 'en_US')->getHour();
+        $menit = Time::now('Asia/Makassar', 'en_US')->getMinute();
+        $detik = Time::now('Asia/Makassar', 'en_US')->getSecond();
+
+        $data_waktu = $waktu . ":" . $menit . ":" . $detik;
+
         $judul = 'Beranda';
         $isi = 'home/beranda.php';
         $id_hapus = $db->query("SELECT * FROM data_angka")->getLastRow();
@@ -29,6 +34,7 @@ class Home extends BaseController
         $data = [
             'judul' => $judul,
             'isi'   => $isi,
+            'data_waktu' => $data_waktu,
             'waktu' => $waktu,
             'id_hapus' => $id_baru,
             'hari_ini' => $myTime,

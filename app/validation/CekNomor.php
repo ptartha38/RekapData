@@ -74,7 +74,7 @@ class CekNomor
 
     public function filter_pembelian($nomor)
     {
-        if ($nomor >= 500) {
+        if ($nomor >= 1000) {
             $harga = $nomor;
         } else {
             $harga = "salah";

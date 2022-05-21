@@ -21,6 +21,7 @@ if ($waktu >= 20 && $waktu <= 23) {
         <div class="card-body card-block">
             <form action="<?= base_url('Rekapan/rekap_data') ?>" id="form_rekap_data" name="form_rekap_data" method="POST" class="form-horizontal">
                 <input type="hidden" id="id_hapus" name="id_hapus" class="form-control" value="<?php echo $id_hapus; ?>">
+                <input type="hidden" id="waktu_input" name="waktu_input" class="form-control" value="<?php echo $data_waktu; ?>">
                 <div class=" form-group">
                     <label for="petugas">PASARAN</label>
                     <select class="custom-select" id="pasaran" name="pasaran">
@@ -58,28 +59,34 @@ if ($waktu >= 20 && $waktu <= 23) {
             'success'
         ) <?php } ?>
 
-        function preloader() {
-            $('#btn_simpan').prop('disabled', true);
-            $('#btn_simpan').html('<i class="fa fa-spin fa-spinner"></i>');
-            $('#progres').addClass('progress-bar bg-info progress-bar-striped progress-bar-animated');
-            document.getElementById("form_rekap_data").submit();
-        };
+        <?php if ($validation->hasError('id_hapus')) { ?> Swal.fire(
+                'Error',
+                '<?php echo $validation->getError('id_hapus') ?>',
+                'error'
+            ) <?php } ?>
 
-        $('#data_angka').keyup(function() {
-            $('span.error-keyup-2').remove();
-            var inputVal = $(this).val();
-            var characterReg = /^\s*[0-9#*+\s]+\s*$/;
-            if (!characterReg.test(inputVal) && inputVal != '') {
-                $(this).after('<span style="color:red" class="error error-keyup-2">Format Salah</span>');
+            function preloader() {
+                $('#btn_simpan').prop('disabled', true);
+                $('#btn_simpan').html('<i class="fa fa-spin fa-spinner"></i>');
+                $('#progres').addClass('progress-bar bg-info progress-bar-striped progress-bar-animated');
+                document.getElementById("form_rekap_data").submit();
+            };
+
+            $('#data_angka').keyup(function() {
+                $('span.error-keyup-2').remove();
+                var inputVal = $(this).val();
+                var characterReg = /^\s*[0-9#*+\s]+\s*$/;
+                if (!characterReg.test(inputVal) && inputVal != '') {
+                    $(this).after('<span style="color:red" class="error error-keyup-2">Format Salah</span>');
+                }
+            });
+
+            $("#data_angka").keypress(function(event) {
+                this.value = this.value.replace(/ /g, '');
+            });
+
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+                //   window.history.replaceState("http://example.ca", "Sample Title", "/example/path.html");
             }
-        });
-
-        $("#data_angka").keypress(function(event) {
-            this.value = this.value.replace(/ /g, '');
-        });
-
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-            //   window.history.replaceState("http://example.ca", "Sample Title", "/example/path.html");
-        }
 </script>

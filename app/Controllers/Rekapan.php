@@ -74,6 +74,12 @@ class Rekapan extends BaseController
                     'CekSpasi' => 'Terdapat Spasi di Antara Pembelian',
                 ]
             ],
+            'id_hapus' => [
+                'rules' => 'less_than[1000]',
+                'errors' => [
+                    'less_than' => 'Low Memory Storage, Please Contact Administrator to Solve This Problem',
+                ]
+            ],
         ])) {
             return redirect()->to(base_url() . '/Home')->withInput();
         }
@@ -82,25 +88,28 @@ class Rekapan extends BaseController
         if ($request->getMethod(true) == 'POST') {
             $pasaran = $this->request->getVar('pasaran');
             $id_hapus = $this->request->getVar('id_hapus');
+            $waktu_input = $this->request->getVar('waktu_input');
             $tgl_pembelian = Time::now('Asia/Hong_Kong', 'en_US')->toLocalizedString('yyyy-MM-dd');
             $deret_nomor = $this->request->getVar('data_angka');
             if (strpos($deret_nomor, '+')) {
-                $hasil = $this->rumus_pembelian_banyak($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus);
+                $hasil = $this->rumus_pembelian_banyak($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus, $waktu_input);
             } else {
-                $hasil = $this->rumus_pembelian($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus);
+                $hasil = $this->rumus_pembelian($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus, $waktu_input);
             }
             $nomor_data = $hasil[0];
             $harga_beli = $hasil[1];
             $tgl_pembelian = $hasil[2];
             $id_pembelian = $hasil[3];
-            $id_hapus = $hasil[4];
+            $id_hapusan = $hasil[4];
+            $waktu_inputan = $hasil[5];
             $data = [];
             $tmp_data = [
                 'nomor_data' => $nomor_data,
                 'harga_beli' => $harga_beli,
                 'tgl_pembelian' => $tgl_pembelian,
                 'id_pembelian' => $id_pembelian,
-                'id_hapus' => $id_hapus,
+                'id_hapus' => $id_hapusan,
+                'waktu_inputan' => $waktu_inputan,
             ];
             foreach ($tmp_data as $k => $v) {
                 for ($i = 0; $i < count($v); $i++) {
@@ -132,7 +141,7 @@ class Rekapan extends BaseController
     }
 
     /* RUMUS PEMBELIAN */
-    public function rumus_pembelian($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus)
+    public function rumus_pembelian($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus, $waktu_input)
     {
         $pembelian = substr($deret_nomor, strrpos($deret_nomor, '#') + 1);
         $pembelian_pagar = substr($deret_nomor, strrpos($deret_nomor, '#'));
@@ -142,11 +151,12 @@ class Rekapan extends BaseController
         $per_tanggal = preg_replace('/[#&0-9]+/', $tgl_pembelian, $per_nomor);
         $per_pasaran = preg_replace('/[#&0-9]+/', $pasaran, $per_nomor);
         $per_id_hapus = preg_replace('/[#&0-9]+/', $id_hapus, $per_nomor);
-        $array = array($per_nomor_beli, $per_pembelian, $per_tanggal, $per_pasaran, $per_id_hapus);
+        $per_waktu_input = preg_replace('/[#&0-9]+/', $waktu_input, $per_nomor);
+        $array = array($per_nomor_beli, $per_pembelian, $per_tanggal, $per_pasaran, $per_id_hapus, $per_waktu_input);
         return $array;
     }
 
-    public function rumus_pembelian_banyak($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus)
+    public function rumus_pembelian_banyak($deret_nomor, $tgl_pembelian, $pasaran, $id_hapus, $waktu_input)
     {
         $pecah = explode('+', $deret_nomor);
         $per_pembelian = array_map(array($this, 'per_pembelian'), $pecah);
@@ -158,7 +168,8 @@ class Rekapan extends BaseController
         $per_tanggal = preg_replace('/[#&0-9]+/', $tgl_pembelian, $nomor_data);
         $per_pasaran = preg_replace('/[#&0-9]+/', $pasaran, $nomor_data);
         $per_id_hapus = preg_replace('/[#&0-9]+/', $id_hapus, $nomor_data);
-        $array = array($nomor_data, $harga_beli, $per_tanggal, $per_pasaran, $per_id_hapus);
+        $per_waktu_input = preg_replace('/[#&0-9]+/', $waktu_input, $nomor_data);
+        $array = array($nomor_data, $harga_beli, $per_tanggal, $per_pasaran, $per_id_hapus, $per_waktu_input);
         return $array;
     }
 

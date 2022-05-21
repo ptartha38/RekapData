@@ -1,0 +1,84 @@
+CRITICAL - 2022-05-15 06:23:40 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-15 06:31:37 --> Undefined variable: data_waktu
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-15 06:31:58 --> Call to a member function addMinutes() on string
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-15 06:32:35 --> Call to a member function addMinutes() on string
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-15 06:32:53 --> syntax error, unexpected '$waktu' (T_VARIABLE)
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-15 06:34:08 --> DateTimeZone::__construct(): Unknown or bad timezone (34)
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\I18n\Time.php(94): DateTimeZone->__construct('34')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\I18n\Time.php(146): CodeIgniter\I18n\Time->__construct('19', '34', '8')
+#2 C:\xampp\htdocs\RekapData\app\Controllers\Home.php(23): CodeIgniter\I18n\Time::parse('19', '34', '8')
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-15 06:35:36 --> syntax error, unexpected ','
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-15 06:35:54 --> syntax error, unexpected '$detik' (T_VARIABLE)
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(274): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-15 09:29:50 --> Undefined variable: per_nomor
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Rekapan.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 171, Array)
+#1 C:\xampp\htdocs\RekapData\app\Controllers\Rekapan.php(95): App\Controllers\Rekapan->rumus_pembelian_banyak('3942*942*3679*6...', '2022-05-15', 'HK', '11', '22:29:46')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Rekapan->rekap_data()
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekapan))
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-15 09:40:04 --> Undefined variable: nomor_data
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Rekapan.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\RekapData\app\Controllers\Rekapan.php(97): App\Controllers\Rekapan->rumus_pembelian('24#90000', '2022-05-15', 'HK', '15', '22:40:0')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Rekapan->rekap_data()
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekapan))
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
