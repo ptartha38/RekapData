@@ -25,6 +25,14 @@ class Keuangan extends BaseController
         $hasil_singapore = $hasil_filter->where('pasaran =', "SGP")->where('tanggal =', $tgl_keluaran)->get()->getResultArray();
         $hasil_hongkong = $hasil_filter->where('pasaran =', "HK")->where('tanggal =', $tgl_keluaran)->get()->getResultArray();
 
+        // Start Filter untuk tanggal Laporan
+        if ($tgl_keluaran != null) {
+            $filter_tanggal = $this->tanggal_indo($tgl_keluaran, true);
+        } else {
+            $filter_tanggal = "";
+        }
+        // End Filter untuk tanggal Laporan
+
         if ($hasil_sydney != null) {
             $tampil_hasil = $hasil_sydney;
             foreach ($tampil_hasil as $row) {
@@ -102,6 +110,7 @@ class Keuangan extends BaseController
             'hadiah_hongkong' => $hadiah_hongkong,
             'total_hongkong' => $total_hongkong,
             'tgl_hari_ini' => $myTime,
+            'tgl_filter' => $filter_tanggal,
             'session' => $session,
             'validation' => \Config\Services::validation(),
         ];
@@ -268,5 +277,43 @@ class Keuangan extends BaseController
 
         $hasil_rupiah = "Rp " . number_format($angka, 0, '.', '.');
         return $hasil_rupiah;
+    }
+
+    /* FUNGSI PENDUKUNG LAINNYA */
+    public function tanggal_indo($tanggal, $cetak_hari = false)
+    {
+        $hari = array(
+            1 => 'Senin',
+            'Selasa',
+            'Rabu',
+            'Kamis',
+            'Jumat',
+            'Sabtu',
+            'Minggu'
+        );
+        $bulan = array(
+            1 => 'Januari',
+            'Februari',
+            'Maret',
+            'April',
+            'Mei',
+            'Juni',
+            'Juli',
+            'Agustus',
+            'September',
+            'Oktober',
+            'November',
+            'Desember'
+        );
+        $split = explode('-', $tanggal);
+        $tgl_indo = $split[2] .
+            ' ' . $bulan[(int) $split[1]] .
+            ' ' . $split[0];
+        if ($cetak_hari) {
+            $num = date('N', strtotime($tanggal));
+            return $hari[$num] .
+                ', ' . $tgl_indo;
+        }
+        return $tgl_indo;
     }
 }

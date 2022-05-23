@@ -44,6 +44,23 @@ function rupiah($angka)
                     <tr>
                         <td>Total === <?= rupiah((int)$total_sydney) ?></td>
                     </tr>
+                    <tr>
+                        <td>
+                            <div <?php echo ($tgl_filter && $hadiah_sydney != "") ? "" : 'hidden'; ?> class="btn btn-success">
+                                <a href="http://api.whatsapp.com://send?text=
+                                <?= "*LAPORAN KEUANGAN*" . "%0A" . "%0A" .
+                                    "*SYDNEY* " . "%0A" . $tgl_filter . "%0A" . "%0A" .
+                                    "*Bruto :* " . $kotor_sydney . "%0A" .
+                                    "*Netto :* " . $bersih_sydney . "%0A" .
+                                    "*Jackpot Prize :* " . $hadiah_sydney .
+                                    "%0A" . "___________________________" . "%0A" . "%0A" .
+                                    "*Profit :* " . rupiah((int)$total_sydney)
+                                ?> " target=" _blank">
+                                    <i style="color: white;" class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -67,6 +84,23 @@ function rupiah($angka)
                     <tr>
                         <td>Total === <?= rupiah((int)$total_singapore); ?></td>
                     </tr>
+                    <tr>
+                        <td>
+                            <div <?php echo ($tgl_filter && $hadiah_singapore != "") ? "" : 'hidden'; ?> class="btn btn-success">
+                                <a href="http://api.whatsapp.com://send?text=
+                                <?= "*LAPORAN KEUANGAN*" . "%0A" . "%0A" .
+                                    "*SINGAPORE* " . "%0A" . $tgl_filter . "%0A" . "%0A" .
+                                    "*Bruto :* " . $kotor_singapore . "%0A" .
+                                    "*Netto :* " . $bersih_singapore . "%0A" .
+                                    "*Jackpot Prize :* " . $hadiah_singapore .
+                                    "%0A" . "______________________" . "%0A" . "%0A" .
+                                    "*Profit :* " . rupiah((int)$total_singapore)
+                                ?> " target=" _blank">
+                                    <i style="color: white;" class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -89,6 +123,23 @@ function rupiah($angka)
                     </tr>
                     <tr>
                         <td>Total === <?= rupiah((int)$total_hongkong); ?></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div <?php echo ($tgl_filter && $hadiah_hongkong != "") ? "" : 'hidden'; ?> class="btn btn-success">
+                                <a href="http://api.whatsapp.com://send?text=
+                                <?= "*LAPORAN KEUANGAN*" . "%0A" . "%0A" .
+                                    "*HONGKONG* " . "%0A" . $tgl_filter . "%0A" . "%0A" .
+                                    "*Bruto :* " . $kotor_hongkong . "%0A" .
+                                    "*Netto :* " . $bersih_hongkong . "%0A" .
+                                    "*Jackpot Prize :* " . $hadiah_hongkong .
+                                    "%0A" . "______________________" . "%0A" . "%0A" .
+                                    "*Profit :* " . rupiah((int)$total_hongkong)
+                                ?> " target=" _blank">
+                                    <i style="color: white;" class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
