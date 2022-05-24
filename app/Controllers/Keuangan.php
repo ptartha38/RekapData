@@ -247,8 +247,19 @@ class Keuangan extends BaseController
             }
 
             /* Nilai Hadiah  */
+            if ($nomor_3D_dan_hadiah != null) {
+                $tambah3D = " + ";
+            } else {
+                $tambah3D = "";
+            }
+            if ($nomor_4D_dan_hadiah != null) {
+                $tambah4D = " + ";
+            } else {
+                $tambah4D = "";
+            }
+
             $total_hadiah = $hadiah_2D + $hadiah_3D + $hadiah_4D;
-            $hadiah = $nomor_2D_dan_hadiah . $nomor_3D_dan_hadiah . $nomor_4D_dan_hadiah . " = " . $this->rupiah($total_hadiah) . " (TOTAL HADIAH)";
+            $hadiah = $nomor_2D_dan_hadiah . $tambah3D . $nomor_3D_dan_hadiah . $tambah4D . $nomor_4D_dan_hadiah . " = " . $this->rupiah($total_hadiah) . " (TOTAL HADIAH)";
             /* Nilai Hadiah  */
 
             /* Totalan */
