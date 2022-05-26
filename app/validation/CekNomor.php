@@ -46,6 +46,21 @@ class CekNomor
         return false;
     }
 
+    public function CekEnter($data_nomor)
+    {
+        // Cek Spasi
+        if (preg_match('/(?:\s|&nbsp;)+/', $data_nomor, $cek_enter)) {
+            $hasil_cek_enter = "ada enter";
+        } else {
+            $hasil_cek_enter = "tidak ada enter";
+        };
+        // Hasil
+        if ($hasil_cek_enter === "tidak ada enter") {
+            return true;
+        }
+        return false;
+    }
+
     function cek_pembelian_dulu($data_nomor)
     {
         $pecah = explode('+', $data_nomor);
