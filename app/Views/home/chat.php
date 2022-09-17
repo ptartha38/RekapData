@@ -316,7 +316,7 @@
                             <div class="form-group">
                                 <div class="chat-message clearfix">
                                     <div class="input-group mb-0">
-                                        <textarea rows="1" name="message" id="message" placeholder="Pesan" class="form-control"></textarea>
+                                        <textarea rows="1" require name="message" id="message" placeholder="Pesan" class="form-control"></textarea>
                                         <input type="hidden" class="form-control" id="username" name="username" value="<?= $session->username; ?>">
                                         <input type="hidden" class="form-control" id="waktu_pesan" name="waktu_pesan" value="<?= $data_waktu; ?>">
                                         <input type="hidden" class="form-control" id="hari_pesan" name="hari_pesan" value="<?= $today; ?>">
@@ -400,11 +400,12 @@
                 data: $('#form-pesan').serialize(),
                 success: function(x) {
                     if (x.sukses == true) {
-                        console.log("Data Tersimpan");
+                        console.log(x.pesan);
                         $("#message").val('');
                     }
                 }
             });
         });
+
     });
 </script>

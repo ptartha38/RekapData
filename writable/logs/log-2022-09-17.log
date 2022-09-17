@@ -73,3 +73,66 @@ CRITICAL - 2022-09-17 04:31:50 --> Class "App\Controllers\ChatModel" not found
 #2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-09-17 07:27:32 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:33 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:34 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:35 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:36 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:37 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:38 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:39 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:27:40 --> syntax error, unexpected token "!="
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

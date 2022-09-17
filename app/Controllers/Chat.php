@@ -53,12 +53,20 @@ class Chat extends BaseController
                 'waktu_pesan' => $this->request->getVar('waktu_pesan'),
                 'hari_pesan' => $this->request->getVar('hari_pesan'),
             ];
-            $insert = $chat_room->insert_chat($data);
 
-            if ($insert) {
+            if ($this->request->getVar('message') != "") {
+                $insert = $chat_room->insert_chat($data);
+            } else {
+                $insert = "kosong";
+            }
+
+            if ($insert != "kosong") {
                 $this->output['sukses'] = true;
                 $this->output['pesan']  = 'Data di Input';
                 $this->output['data']   = $insert;
+            } else {
+                $this->output['sukses'] = true;
+                $this->output['pesan']  = 'Data Tidak di Input';
             }
             echo json_encode($this->output);
         }
