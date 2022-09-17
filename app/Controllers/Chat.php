@@ -86,4 +86,17 @@ class Chat extends BaseController
             echo json_encode($this->output);
         }
     }
+
+    public function hapus_data_chat()
+    {
+        $session = session();
+        helper('filesystem');
+        $request = Services::request();
+        $ChatModel = new ChatModel($request);
+        $hapus = $ChatModel->hapus_riwayat_chat();
+        if ($hapus) {
+            $session->setFlashdata('sukses', 'Data Berhasil di Hapus');
+            return redirect()->to(base_url() . '/Chat');
+        }
+    }
 }

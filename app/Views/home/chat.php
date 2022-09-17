@@ -1,4 +1,8 @@
 <style>
+    .modal-backdrop {
+        z-index: -1;
+    }
+
     body {
         background-color: #f4f7f6;
         margin-top: 20px;
@@ -298,10 +302,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 hidden-sm text-right">
-                                    <!-- <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a> -->
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ModalHapus">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -330,11 +333,44 @@
         </div>
     </div>
 </div>
+
+<!-- DELETE MODAL -->
+<div class="modal fade" id="ModalHapus" tabindex="-1" role="dialog" aria-labelledby="ModalHapusLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalHapusLabel">MENGOSONGKAN CHAT ROOM</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="form-hapus" method="post" action="<?= base_url('Chat/hapus_data_chat') ?>">
+                    <p class="error-text"><i style="color: Tomato;" class="fa fa-warning modal-icon"></i><b> ANDA YAKIN AKAN SELURUH MENGHAPUS DATA ?</b>
+                        <br><i>Tindakan Ini Tidak dapat Dibatalkan.</i>
+                    </p>
+                    <input type="hidden" id="delete_id" name="delete_id" class="form-control">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-arrow-circle-left "></i>&nbsp;Close</button>
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;Hapus Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <script>
     $(document).ready(function() {
+
+        <?php if (session()->getFlashdata('sukses')) { ?>
+            Swal.fire(
+                'Selamat',
+                '<?php echo $session->sukses ?>',
+                'success'
+            )
+        <?php } ?>
 
         setInterval(() => {
             tampilkan_pesan();

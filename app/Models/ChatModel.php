@@ -30,4 +30,10 @@ class ChatModel extends Model
 		$this->builder = $this->db->table($this->table)->get();
 		return $this->builder->getResultArray();
 	}
+
+	public function hapus_riwayat_chat()
+	{
+		$this->builder = $this->db->table($this->table)->truncate();
+		return $this->builder;
+	}
 }

@@ -136,3 +136,367 @@ CRITICAL - 2022-09-17 07:27:40 --> syntax error, unexpected token "!="
 #3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-09-17 07:54:39 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:40 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:41 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:42 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:43 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:44 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:45 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:46 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:47 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:48 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:49 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:50 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:51 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:52 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:53 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:54 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:55 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:56 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:57 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:58 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:54:59 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:00 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:01 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:02 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:03 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:04 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:05 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:06 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:07 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:08 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:09 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:10 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:11 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:12 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:13 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:14 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:15 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:16 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:17 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:18 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:19 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:20 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:21 --> Unmatched '}'
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('Chat/isi_pesan')
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Chat/isi_pesan')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 07:55:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::truncate()
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(96): App\Models\ChatModel->hapus_riwayat_chat()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->hapus_data_chat()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
