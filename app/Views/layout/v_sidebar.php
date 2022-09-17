@@ -32,6 +32,10 @@
                     <a class="js-arrow" href="<?= base_url('Personil') ?>">
                         <i class="fas fa-users"></i>Personil</a>
                 </li>
+                <li>
+                    <a class="js-arrow" href="<?= base_url('Chat') ?>">
+                        <i class="fas fa-comments"></i>Chat Room</a>
+                </li>
             </ul>
         </nav>
     </div>

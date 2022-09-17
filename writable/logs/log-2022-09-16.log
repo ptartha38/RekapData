@@ -1,0 +1,151 @@
+CRITICAL - 2022-09-16 02:20:38 --> syntax error, unexpected token "?"
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/chat.php', Array, true)
+#2 C:\xampp\htdocs\RekapData\app\Views\layout\v_content.php(3): view('home/chat.php')
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#6 C:\xampp\htdocs\RekapData\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#7 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#10 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(35): view('layout/v_wrappe...', Array)
+#11 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->index()
+#12 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#13 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2022-09-16 02:30:42 --> syntax error, unexpected token "?"
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('home/chat.php', Array, true)
+#2 C:\xampp\htdocs\RekapData\app\Views\layout\v_content.php(3): view('home/chat.php')
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#6 C:\xampp\htdocs\RekapData\app\Views\layout\v_wrapper.php(7): view('layout/v_conten...')
+#7 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#10 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(35): view('layout/v_wrappe...', Array)
+#11 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->index()
+#12 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#13 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2022-09-16 03:03:52 --> Cannot declare class App\Models\registeruserModel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-16 03:43:32 --> Undefined constant "App\Controllers\this"
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->chat()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-16 03:43:45 --> Undefined constant "App\Controllers\this"
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->chat()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-16 03:44:57 --> Undefined constant "App\Controllers\this"
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->chat()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-16 20:18:52 --> Undefined variable $username
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->insert_chat()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:18:58 --> Undefined variable $username
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->insert_chat()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:19:16 --> Undefined variable $username
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->insert_chat()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:48:15 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:50:06 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:50:44 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:50:56 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:58:53 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 20:59:27 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 21:00:39 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 21:00:50 --> Too few arguments to function App\Models\ChatModel::__construct(), 0 passed in C:\xampp\htdocs\RekapData\app\Controllers\Chat.php on line 66 and exactly 1 expected
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(66): App\Models\ChatModel->__construct()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-16 21:01:10 --> Call to undefined method App\Controllers\Chat::response()
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-16 21:01:18 --> Call to undefined method App\Controllers\Chat::response()
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-16 21:01:41 --> Array to string conversion
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->isi_pesan()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

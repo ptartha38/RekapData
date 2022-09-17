@@ -1,4 +1,11 @@
 </div>
+<div class="container">
+    <form id="form-status">
+        <div class="form-group">
+            <input type="hidden" class="form-control" id="status_username" name="status_username" value="<?= $session->username; ?>">
+        </div>
+    </form>
+</div>
 </div>
 </div>
 <!-- Penutup Main -->
@@ -42,6 +49,29 @@
 <!-- Main JS-->
 <script src="<?= base_url() ?>/assets/dashboard/js/main.js"></script>
 
+<!-- status user -->
+<script>
+    $(document).ready(function() {
+        setInterval(() => {
+            update_status_user();
+        }, 1000);
+
+        function update_status_user() {
+            $.ajax({
+                url: "<?php echo base_url('Personil/update_status_user'); ?>",
+                type: 'POST',
+                async: true,
+                dataType: 'JSON',
+                data: $('#form-status').serialize(),
+                success: function(x) {
+                    if (x.sukses == true) {
+                        console.log(x.pesan);
+                    }
+                }
+            });
+        }
+    });
+</script>
 </body>
 
 </html>

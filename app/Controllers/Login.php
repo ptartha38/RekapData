@@ -37,7 +37,7 @@ class Login extends BaseController
 					'id'       => $data['id'],
 					'nama'       => $data['nama'],
 					'username'     => $data['username'],
-					'status'     => "aktif",
+					'status'     => $data['status'],
 					'logged_in'     => TRUE
 				];
 				$session->set($ses_data);

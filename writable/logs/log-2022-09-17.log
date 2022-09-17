@@ -1,0 +1,75 @@
+CRITICAL - 2022-09-17 04:15:07 --> Undefined variable $session
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->update_status_user()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 04:15:18 --> Undefined variable $session
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->update_status_user()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 04:16:27 --> Undefined variable $session
+#0 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->update_status_user()
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-17 04:17:20 --> CodeIgniter\Database\BaseBuilder::update(): Argument #1 ($set) must be of type ?array, string given, called in C:\xampp\htdocs\RekapData\app\Models\ChatModel.php on line 37
+#0 C:\xampp\htdocs\RekapData\app\Models\ChatModel.php(37): CodeIgniter\Database\BaseBuilder->update('status', 'online')
+#1 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(86): App\Models\ChatModel->update_status_user('leong', 'online')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->update_status_user()
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-17 04:19:37 --> CodeIgniter\Database\BaseBuilder::update(): Argument #1 ($set) must be of type ?array, string given, called in C:\xampp\htdocs\RekapData\app\Models\ChatModel.php on line 37
+#0 C:\xampp\htdocs\RekapData\app\Models\ChatModel.php(37): CodeIgniter\Database\BaseBuilder->update('status', 'online')
+#1 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(86): App\Models\ChatModel->update_status_user('leong', 'online')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->update_status_user()
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-17 04:22:45 --> CodeIgniter\Database\BaseBuilder::update(): Argument #1 ($set) must be of type ?array, string given, called in C:\xampp\htdocs\RekapData\app\Models\ChatModel.php on line 37
+#0 C:\xampp\htdocs\RekapData\app\Models\ChatModel.php(37): CodeIgniter\Database\BaseBuilder->update('status', 'online')
+#1 C:\xampp\htdocs\RekapData\app\Controllers\Chat.php(86): App\Models\ChatModel->update_status_user(NULL, 'online')
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Chat->update_status_user()
+#3 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+#4 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-17 04:27:43 --> Class "App\Controllers\ChatModel" not found
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Personil->update_status_user()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personil))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-17 04:29:29 --> Class "App\Controllers\ChatModel" not found
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Personil->update_status_user()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personil))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-17 04:30:57 --> Class "App\Controllers\ChatModel" not found
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Personil->update_status_user()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personil))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-17 04:31:44 --> Class "App\Controllers\ChatModel" not found
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Personil->update_status_user()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personil))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-17 04:31:50 --> Class "App\Controllers\ChatModel" not found
+#0 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Personil->update_status_user()
+#1 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personil))
+#2 C:\xampp\htdocs\RekapData\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\RekapData\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

@@ -43,6 +43,7 @@ class Filters extends BaseConfig
 				'Rekapan', 'Rekapan/*',
 				'Keuangan', 'Keuangan/*',
 				'Grafik', 'Grafik/*',
+				'Chat', 'Chat/*',
 			]],
 			'toolbar',
 			// 'honeypot',

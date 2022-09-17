@@ -32,7 +32,7 @@ class personilModel extends Model
         $query = $this->builder->getWhere(['id' => $id_update]);
         return $query->getRow();
     }
-    
+
     public function update_biodata_user($data, $id_update)
     {
         $this->builder = $this->db->table($this->table);
@@ -45,5 +45,17 @@ class personilModel extends Model
         $this->builder = $this->db->table($this->table);
         $this->builder->where('id', $id_anggota);
         return $this->builder->delete();
+    }
+    public function update_status_user($username, $data)
+    {
+        $this->builder = $this->db->table($this->table);
+        $this->builder->where('username', $username);
+        return $this->builder->update($data);
+    }
+
+    public function ambil_data_user()
+    {
+        $this->builder = $this->db->table($this->table)->get();
+        return $this->builder->getResultArray();
     }
 }

@@ -10,6 +10,12 @@ use App\Models\personilModel;
 
 class Personil extends BaseController
 {
+    public $output = [
+        'sukses'    => false,
+        'pesan'     => '',
+        'data'      => [],
+    ];
+
     // PERSONIL CODE
     public function index()
     {
@@ -96,6 +102,42 @@ class Personil extends BaseController
                 $session->setFlashdata('sukses', 'Data Berhasil di Hapus');
                 return redirect()->to(base_url() . '/personil');
             }
+        }
+    }
+
+    public function update_status_user()
+    {
+        $session = session();
+        $request = Services::request();
+        $data_lengkap = new personilModel($request);
+        if ($request->getMethod(true) == 'POST') {
+            $username = $this->request->getVar('status_username');
+            $data = [
+                'username' => $this->request->getVar('status_username'),
+                'status' => "online",
+            ];
+            $res = $data_lengkap->update_status_user($username, $data);
+            if ($res) {
+                $this->output['sukses'] = true;
+                $this->output['pesan']  = 'User Online';
+                $this->output['data']   = $res;
+            }
+            echo json_encode($this->output);
+        }
+    }
+
+    public function ambil_data_user()
+    {
+        $request = Services::request();
+        $data_lengkap = new personilModel($request);
+        if ($request->getMethod(true) == 'POST') {
+            $res = $data_lengkap->ambil_data_user();
+            if ($res) {
+                $this->output['sukses'] = true;
+                $this->output['pesan']  = 'Data ditemukan';
+                $this->output['data']   = $res;
+            }
+            echo json_encode($this->output);
         }
     }
 }
