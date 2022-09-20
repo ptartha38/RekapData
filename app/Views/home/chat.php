@@ -325,14 +325,17 @@
                                 <div class="form-group">
                                     <div class="chat-message clearfix">
                                         <div class="input-group mb-0">
-                                            <textarea rows="1" require name="message" id="message" placeholder="Pesan" class="form-control"></textarea>
+                                            <textarea rows="2" require name="message" id="message" placeholder="Pesan" class="two form-control"></textarea>
                                             <input type="hidden" class="form-control" id="username" name="username" value="<?= $session->username; ?>">
                                             <input type="hidden" class="form-control" id="waktu_pesan" name="waktu_pesan" value="<?= $data_waktu; ?>">
                                             <input type="hidden" class="form-control" id="hari_pesan" name="hari_pesan" value="<?= $today; ?>">
                                         </div>
                                         <div id="pesan-error"></div>
-                                        <button type="submit" id="send" class="btn btn-outline-success mt-2 mb-2">
+                                        <button type="submit" id="send" class="btn btn-success mt-2 mb-2 mr-2">
                                             <i class="fa fa-send"></i>
+                                        </button>
+                                        <button type="button" id="emoji" name="emoji" class="second-btn btn btn-warning">
+                                            <i class="fa fa-smile"></i>
                                         </button>
                                         <div> <img style="width:150px" id="preview" />
                                         </div>
@@ -384,6 +387,20 @@
 
 <script>
     $(document).ready(function() {
+
+        new EmojiPicker({
+            trigger: [{
+                    selector: '.first-btn',
+                    insertInto: ['.one', '.two'] // '.selector' can be used without array
+                },
+                {
+                    selector: '.second-btn',
+                    insertInto: '.two'
+                }
+            ],
+            closeButton: true,
+            //specialButtons: green
+        });
 
         function realtime() {
             var dt = new Date();

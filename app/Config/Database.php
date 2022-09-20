@@ -40,7 +40,7 @@ class Database extends Config
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
-		'charset'  => 'utf8',
+		'charset'  => 'utf8mb4',
 		'DBCollat' => 'utf8_general_ci',
 		'swapPre'  => '',
 		'encrypt'  => false,
@@ -85,8 +85,7 @@ class Database extends Config
 		// Ensure that we always set the database group to 'tests' if
 		// we are currently running an automated test suite, so that
 		// we don't overwrite live data on accident.
-		if (ENVIRONMENT === 'testing')
-		{
+		if (ENVIRONMENT === 'testing') {
 			$this->defaultGroup = 'tests';
 		}
 	}

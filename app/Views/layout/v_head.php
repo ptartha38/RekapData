@@ -37,6 +37,9 @@
     <!-- LightBox -->
     <link href="<?= base_url() ?>/assets/lightbox/dist/css/lightbox.css" rel="stylesheet" />
 
+    <!-- Emoji Picker -->
+    <script src="<?= base_url() ?>/assets/emoji/vanillaEmojiPicker.js"></script>
+
     <!-- Main CSS-->
     <link href="<?= base_url() ?>/assets/dashboard/css/theme.css" rel="stylesheet" media="all">
 
