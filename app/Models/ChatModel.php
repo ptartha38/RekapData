@@ -27,7 +27,7 @@ class ChatModel extends Model
 
 	public function ambil_data_pesan()
 	{
-		$this->builder = $this->db->table($this->table)->get();
+		$this->builder = $this->db->table($this->table)->orderBy('realtime', 'DESC')->get();
 		return $this->builder->getResultArray();
 	}
 

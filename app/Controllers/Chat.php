@@ -25,7 +25,7 @@ class Chat extends BaseController
         $menit = Time::now('Asia/Makassar', 'en_US')->getMinute();
         $detik = Time::now('Asia/Makassar', 'en_US')->getSecond();
 
-        $data_waktu = $jam . ":" . $menit . " Wita";
+        $data_waktu = $jam . ":" . $menit . ":" . $detik;
 
         $judul = 'Chat Room';
         $isi = 'home/chat.php';
@@ -35,7 +35,7 @@ class Chat extends BaseController
             'judul' => $judul,
             'isi'   => $isi,
             'data_waktu' => $data_waktu,
-            'today' => $today,
+            'today' => $this->tanggal_indo($today),
             'session' => $session,
             'validation' => \Config\Services::validation(),
         ];
@@ -47,14 +47,24 @@ class Chat extends BaseController
         $request = Services::request();
         $chat_room = new ChatModel($request);
         if ($request->getMethod(true) == 'POST') {
+
+            $foto = $this->request->getFile('gambar');
+            if ($foto != "") {
+                $nama_baru = $foto->getRandomName();
+                $foto->move('assets/img/dokumentasi_chat/', $nama_baru);
+            } else {
+                $nama_baru = "";
+            }
+
             $data = [
                 'username' => $this->request->getVar('username'),
                 'message' => $this->request->getVar('message'),
                 'waktu_pesan' => $this->request->getVar('waktu_pesan'),
                 'hari_pesan' => $this->request->getVar('hari_pesan'),
+                'gambar' => $nama_baru
             ];
 
-            if ($this->request->getVar('message') != "") {
+            if ($this->request->getVar('message') or $this->request->getFile('gambar') != "") {
                 $insert = $chat_room->insert_chat($data);
             } else {
                 $insert = "kosong";
@@ -65,7 +75,7 @@ class Chat extends BaseController
                 $this->output['pesan']  = 'Data di Input';
                 $this->output['data']   = $insert;
             } else {
-                $this->output['sukses'] = true;
+                $this->output['sukses'] = false;
                 $this->output['pesan']  = 'Data Tidak di Input';
             }
             echo json_encode($this->output);
@@ -94,9 +104,51 @@ class Chat extends BaseController
         $request = Services::request();
         $ChatModel = new ChatModel($request);
         $hapus = $ChatModel->hapus_riwayat_chat();
+        $files = glob('assets/img/dokumentasi_chat/*');
+        foreach ($files as $file) {
+            unlink($file);
+        }
         if ($hapus) {
             $session->setFlashdata('sukses', 'Data Berhasil di Hapus');
             return redirect()->to(base_url() . '/Chat');
         }
+    }
+
+    /* FUNGSI PENDUKUNG LAINNYA */
+    public function tanggal_indo($tanggal, $cetak_hari = false)
+    {
+        $hari = array(
+            1 => 'Senin',
+            'Selasa',
+            'Rabu',
+            'Kamis',
+            'Jumat',
+            'Sabtu',
+            'Minggu'
+        );
+        $bulan = array(
+            1 => 'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'Mei',
+            'Jun',
+            'Jul',
+            'Ags',
+            'Sep',
+            'Okt',
+            'Nov',
+            'Des'
+        );
+        $split = explode('-', $tanggal);
+        $tgl_indo = $split[2] .
+            ' ' . $bulan[(int) $split[1]] .
+            ' ' . $split[0];
+        if ($cetak_hari) {
+            $num = date('N', strtotime($tanggal));
+            return $hari[$num] .
+                ', ' . $tgl_indo;
+        }
+        return $tgl_indo;
     }
 }

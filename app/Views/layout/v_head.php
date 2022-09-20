@@ -34,6 +34,8 @@
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+    <!-- LightBox -->
+    <link href="<?= base_url() ?>/assets/lightbox/dist/css/lightbox.css" rel="stylesheet" />
 
     <!-- Main CSS-->
     <link href="<?= base_url() ?>/assets/dashboard/css/theme.css" rel="stylesheet" media="all">

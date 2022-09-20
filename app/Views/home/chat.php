@@ -1,4 +1,12 @@
 <style>
+    .divider:after,
+    .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+    }
+
     .modal-backdrop {
         z-index: -1;
     }
@@ -286,52 +294,65 @@
                         <ul class="list-unstyled chat-list mt-2 mb-0">
                             <div id="status_user">
                             </div>
-
                         </ul>
                     </div>
                     <div class="chat">
                         <div class="chat-header clearfix">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
-                                        <img src="<?= base_url() ?>/assets/img/gambar/gembok.png" alt="avatar">
-                                    </a>
-                                    <div class="chat-about">
-                                        <h6 class="m-b-0">Group Chat</h6>
-                                        <small>Private Group</small>
+                            <form id="form-pesan" enctype="multipart/form-data" action="<?php echo base_url('Chat/insert_chat'); ?>">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
+                                            <img src="<?= base_url() ?>/assets/img/gambar/gembok.png" alt="avatar">
+                                        </a>
+                                        <div class="chat-about">
+                                            <h6 class="m-b-0">Group Chat</h6>
+                                            <small>Private Group</small>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 hidden-sm text-right">
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ModalHapus">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chat-history">
-                            <ul class="m-b-0">
-                                <div id="isi-chat">
+                                    <div class="col-lg-6 hidden-sm text-right">
+                                        <!-- File Upload -->
+                                        <label for="gambar"><i class="fa fa-image btn btn-outline-primary"></i></label>
+                                        <input type="file" name="gambar" id="gambar" hidden>
+                                        <!-- File Upload -->
 
-                                </div>
-                            </ul>
-                        </div>
-                        <form id="form-pesan">
-                            <div class="form-group">
-                                <div class="chat-message clearfix">
-                                    <div class="input-group mb-0">
-                                        <textarea rows="1" require name="message" id="message" placeholder="Pesan" class="form-control"></textarea>
-                                        <input type="hidden" class="form-control" id="username" name="username" value="<?= $session->username; ?>">
-                                        <input type="hidden" class="form-control" id="waktu_pesan" name="waktu_pesan" value="<?= $data_waktu; ?>">
-                                        <input type="hidden" class="form-control" id="hari_pesan" name="hari_pesan" value="<?= $today; ?>">
+                                        <!-- Delete Chat -->
+                                        <label for="sampah"><i class="fa fa-trash btn btn-outline-danger"></i></label>
+                                        <button style="display:none;" type="button" id="sampah" class="btn btn-outline-danger" data-toggle="modal" data-target="#ModalHapus">
+                                        </button>
+                                        <!-- Delete Chat -->
                                     </div>
-                                    <button type="submit" id="send" class="btn btn-success mt-2 ">Kirim</button>
                                 </div>
-                        </form>
+                                <div class="form-group">
+                                    <div class="chat-message clearfix">
+                                        <div class="input-group mb-0">
+                                            <textarea rows="1" require name="message" id="message" placeholder="Pesan" class="form-control"></textarea>
+                                            <input type="hidden" class="form-control" id="username" name="username" value="<?= $session->username; ?>">
+                                            <input type="hidden" class="form-control" id="waktu_pesan" name="waktu_pesan" value="<?= $data_waktu; ?>">
+                                            <input type="hidden" class="form-control" id="hari_pesan" name="hari_pesan" value="<?= $today; ?>">
+                                        </div>
+                                        <div id="pesan-error"></div>
+                                        <button type="submit" id="send" class="btn btn-outline-success mt-2 mb-2">
+                                            <i class="fa fa-send"></i>
+                                        </button>
+                                        <div> <img style="width:150px" id="preview" />
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
                     </div>
+                    <div class="chat-history">
+                        <ul class="m-b-0">
+                            <div id="isi-chat">
+
+                            </div>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!-- DELETE MODAL -->
@@ -364,6 +385,12 @@
 <script>
     $(document).ready(function() {
 
+        function realtime() {
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes();
+            $("#waktu_pesan").val(time);
+        }
+
         <?php if (session()->getFlashdata('sukses')) { ?>
             Swal.fire(
                 'Selamat',
@@ -375,6 +402,7 @@
         setInterval(() => {
             tampilkan_pesan();
             tampilkan_user();
+            realtime();
         }, 100);
 
         function tampilkan_user() {
@@ -412,14 +440,25 @@
                     if (x.sukses == true) {
                         var html = "";
                         for (i = 0; i < x.data.length; i++) {
+                            // Isi Chat
                             if (x.data[i].username == "<?= $session->username; ?>") {
                                 var align = "message-data";
                                 var text_align = "message my-message";
+                                var avatar_kiri = "<img src = '<?= base_url() ?>/assets/img/gambar/hacker.png'alt = 'avatar' >";
+                                var avatar_kanan = "";
                             } else {
                                 var align = "message-data text-right";
                                 var text_align = "message other-message float-right";
+                                var avatar_kiri = "";
+                                var avatar_kanan = "<img src = '<?= base_url() ?>/assets/img/gambar/hacker.png'alt = 'avatar' >";
                             }
-                            html += "<li class='clearfix'><div class='name" + align + "'>" + x.data[i].username + "</div><div class ='" + align + "'><img src = '<?= base_url() ?>/assets/img/gambar/hacker.png'alt = 'avatar' ><span class = 'message-data-time'>" + x.data[i].waktu_pesan + ", " + x.data[i].hari_pesan + "</span> </div> <div class = '" + text_align + "'>" + x.data[i].message + "</div> </li>";
+                            if (x.data[i].gambar == "") {
+                                var gambar = "";
+                            } else {
+                                var lightbox = "<a data-lightbox='<?= base_url() ?>/assets/img/dokumentasi_chat/" + x.data[i].gambar + "'href='<?= base_url() ?>/assets/img/dokumentasi_chat/" + x.data[i].gambar + "'>"
+                                var gambar = lightbox + "<img style='width:100px;' src = '<?= base_url() ?>/assets/img/dokumentasi_chat/" + x.data[i].gambar + "'>" + "</a><br>";
+                            }
+                            html += "<li class='clearfix'><div class='name" + align + "'>" + x.data[i].username + "</div><div class ='" + align + "'>" + avatar_kiri + "<span class = 'message-data-time'>" + x.data[i].hari_pesan + ", " + x.data[i].waktu_pesan + " Wita" + "</span>" + avatar_kanan + "</div> <div class = '" + text_align + "'>" + gambar + x.data[i].message + "</div> </li>";
                             $("#isi-chat").html(html);
                         }
                     }
@@ -427,20 +466,43 @@
             });
         }
 
-        $("#send").on('click', function(e) {
+        $('#form-pesan').on('submit', (function(e) {
             e.preventDefault();
+            var formData = new FormData(this);
             $.ajax({
-                url: "<?php echo base_url('Chat/insert_chat'); ?>",
                 type: 'POST',
-                dataType: 'JSON',
-                data: $('#form-pesan').serialize(),
-                success: function(x) {
-                    if (x.sukses == true) {
-                        console.log(x.pesan);
-                        $("#message").val('');
-                    }
+                url: $(this).attr('action'),
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    console.log("success");
+                    console.log(data);
+                    $("#message").val('');
+                    $("#pesan-error").html("<span hidden style='color:green'>Chat terkirim</span>");
+                    $('#preview').attr('src', "");
+                    $('#gambar').val("");
+                },
+                error: function(data) {
+                    console.log("error");
+                    console.log(data);
                 }
             });
+        }));
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#preview').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]); // convert to base64 string
+            }
+        }
+
+        $("#gambar").change(function() {
+            readURL(this);
         });
 
     });
