@@ -76,7 +76,7 @@ class Rekapan extends BaseController
                 ]
             ],
             'id_hapus' => [
-                'rules' => 'less_than[1000]',
+                'rules' => 'less_than[2000]',
                 'errors' => [
                     'less_than' => 'Low Memory Storage, Please Contact Administrator to Solve This Problem',
                 ]
